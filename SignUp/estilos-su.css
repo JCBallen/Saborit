@@ -1,0 +1,92 @@
+body {
+  margin: 100px;
+  background-color: #ebebeb;
+  font-family: "Segoe UI", "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+p,
+a {
+  display: flex;
+  justify-content: center;
+  transition: 0.4s;
+}
+
+a {
+  text-decoration: none;
+  color: #ffa602;
+}
+
+form.form-sign {
+  padding: 50px 0px 0px 0px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  border: #c8c8c8 solid;
+  font-size: medium;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 7px;
+}
+
+input.btn {
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: #0b1360;
+  font-weight: bold;
+  background-color: #219ebc;
+  border-color: #418ba2;
+}
+
+.title {
+  color: #0b1360;
+  margin: 0px;
+  font-size: 50px;
+  font-style: italic;
+  font-weight: bolder;
+  transition: 0.4s;
+}
+
+img {
+  margin: auto;
+  width: 5em;
+  transition: 0.4s;
+}
+
+.btn:hover {
+  background-color: #58b6cd;
+  transition: 0.2s;
+}
+.btn:active {
+  background-color: #0077b6;
+}
+
+.recovery {
+  display: flex;
+  justify-content: space-evenly;
+  transition: 0.4s;
+}
+
+
+@media (max-width: 430px) {
+  .title {
+    font-size: 27px;
+  }
+  .recovery p {
+    font-size: 0.6em;
+    display: block;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="number"] {
+    width: 150px;
+    font-size: 15px;
+  }
+
+  img {
+    width: 3em;
+  }
+}
