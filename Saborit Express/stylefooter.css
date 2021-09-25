@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,600;0,700;1,600;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: flex-end;
+    align-items:center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+footer { 
+    position: relative;
+    width: 100%;
+    background: #707070;
+    /*display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;*/
+}
+
+footer .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    max-width: 974px;
+    margin: 0px auto;
+}
+
+.logo {
+    width: 150px;
+}
+
+.container h3 {
+    font-size: 30px;
+    font-style: italic;
+}
+
+ul.clase  {
+    list-style: none;
+    flex-grow: 2;
+}
+
+.clase{
+    flex-grow: 1;
+}
+
+.contact-information {
+    display: flex;
+    justify-content: left;
+    padding: 9px 0px;
+}
+
+.contact-information p {
+    font-size: 18px;
+    margin-left: 12px;
+}
+
+.wave p {
+    color: white;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
+footer .wave {
+    width: 100%;
+    position: relative;
+}
+
+
+
+
+

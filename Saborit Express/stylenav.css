@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,600;0,700;1,600;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    background: white;
+}
+
+header{
+    position: fixed;
+    top:0;
+    width: 100%;
+}
+
+.logo {
+    cursor: pointer;
+    width: 150px;
+    height: 80px;
+    margin-left: 12px;
+}
+
+.navbar1 {
+   display: flex;
+   justify-content: right;
+   padding: 20px, 10px;
+   background-color: rgba(11, 18, 96, 1);
+}
+
+.navbar1 ul {
+    margin-right: 36px;
+    padding: 5px;
+    background-color: rgba(11, 18, 96, 1);
+}
+
+.navbar1 ul li{
+    display: inline-flex;
+    list-style: none;
+    align-items: right;
+    padding: 0px 20px;
+    display: inline-block;
+    padding: 0px 20px;
+    background-color: rgba(11, 18, 96, 1);
+}
+
+.navbar1 li a {
+    text-decoration: none;
+    color: white;
+    background-color: rgba(11, 18, 96, 1);
+}
+
+.navbar1 b {
+    color: rgba(255, 170, 1, 1);
+    background-color: rgba(11, 18, 96, 1);
+}
+
+.navbar2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px, 10px;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
+}
+.navbar2 li a {
+    list-style: none;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color:	#000000;
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+}
+
+.navbar2 ul {
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+
+.navbar2 ul li {
+    position: relative;
+    margin-right: 50px;
+    /*display: flex;
+    align-items: center;*/
+}
+
+.navbar2 .point{
+    padding: 0 5px;
+    position:absolute;
+    top: 0px;
+    opacity: 0;
+    background: none;
+}
+
+.navbar2 .point:hover{
+    position:absolute;
+    left: 25px;
+    top: 15px;
+    opacity: 1;
+}
+
+.navbar2 .submenu {
+    top: 35px;
+    position: absolute;
+    background-color: white;
+    padding: 5px;
+    visibility:hidden;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.navbar2 li:hover .submenu {
+    width: 180%;
+    visibility: visible;
+}
+
+button, strong{
+    padding: 9px 18px;
+    background-color: rgba(255, 170, 1, 1);
+    border: none;
+    border-radius: 12px;
+    cursor: pointer; 
+    transition: all 0.3s ease 0s;
+    transform: translateY(-5);
+}
+
+button:hover, strong:hover {
+    background-color: rgba(255, 170, 1, 0.8);
+    transform: translateY(5);
+}
+
+
+
