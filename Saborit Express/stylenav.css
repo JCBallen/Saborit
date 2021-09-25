@@ -69,7 +69,6 @@ header{
     font-size: 16px;
     color:	#000000;
     text-decoration: none;
-    transition: all 0.3s ease 0s;
 }
 
 .navbar2 ul {
@@ -85,19 +84,24 @@ header{
     align-items: center;*/
 }
 
-.navbar2 .point{
+.navbar2__menu{
+    list-style: none;
+}
+
+.point{
     padding: 0 5px;
     position:absolute;
     top: 0px;
-    opacity: 0;
+    opacity: 0%;
+    width: 100%;
     background: none;
 }
 
-.navbar2 .point:hover{
+.point:hover{
     position:absolute;
     left: 25px;
     top: 15px;
-    opacity: 1;
+    opacity: 100%;
 }
 
 .navbar2 .submenu {
