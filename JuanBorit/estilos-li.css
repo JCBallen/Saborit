@@ -1,3 +1,9 @@
+:root{
+  --tamano-texto:16px;
+  --tam-titulos:30px;
+}
+
+
 body {
   margin: 100px;
   background-color: #ebebeb;
@@ -19,15 +25,16 @@ form.form-log {
 }
 
 input {
-  border: #c8c8c8 solid;
-  font-size: medium;
+  border: 1px #c8c8c8 solid;
+  font-size: 15px;
   padding: 10px;
   margin: 10px;
-  border-radius: 7px;
+  border-radius: 10px;
+  border-bottom-width: 2px;
 }
 
 input.btn {
-  padding: 10px 20px;
+  padding: 10px 30px;
   border-radius: 10px;
   color: #0b1360;
   font-weight: bold;
@@ -58,11 +65,17 @@ img {
 .btn:active {
   background-color: #0077b6;
 }
+
+input:active{
+  border-color: #ffa602;
+
+}
 .form-log-end {
   display: flex;
   align-items: center;
   transition: 0.2s;
 }
+
 a {
   text-decoration: none;
   color: #ffa602;
