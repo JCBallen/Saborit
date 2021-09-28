@@ -1,25 +1,22 @@
-:root{
-  --tamano-texto:16px;
-  --tam-titulos:30px;
-}
-
 
 body {
-  margin: 100px;
   background-color: #ebebeb;
   font-family: "Segoe UI", "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-p,
-a {
+img[alt="login-img"]{
   display: flex;
   justify-content: center;
+  margin: 100px auto 0px;
+  display: block;
+  width: 5em;
+  transition: 0.4s;
 }
 
 form.form-log {
   padding: 50px 0px 0px 0px;
-  align-items: center;
   display: flex;
+  align-items: center;
   flex-direction: column;
   position: relative;
 }
@@ -42,48 +39,40 @@ input.btn {
   border-color: #418ba2;
 }
 
-.title {
+p.title {
+  display: flex;
+  justify-content: center;
   color: #0078b8;
   margin: 0px;
   font-size: 50px;
   font-style: italic;
   font-weight: bolder;
-  transition: 0.4s;
-}
-
-img {
-  margin: auto;
-  display: block;
-  width: 5em;
-  transition: 0.4s;
+  transition: 0.2s;
 }
 
 .btn:hover {
   background-color: #58b6cd;
   transition: 0.2s;
 }
+
 .btn:active {
   background-color: #0077b6;
 }
 
-input:active{
-  border-color: #ffa602;
-
-}
 .form-log-end {
   display: flex;
   align-items: center;
   transition: 0.2s;
 }
 
-a {
+a.forgot {
   text-decoration: none;
   color: #ffa602;
 }
 
 
 @media (max-width: 483px) {
-  .title {
+  p.title {
     font-size: 27px;
   }
   .recovery p {
