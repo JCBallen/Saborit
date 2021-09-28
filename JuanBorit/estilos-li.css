@@ -1,13 +1,16 @@
-
 body {
   background-color: #ebebeb;
   font-family: "Segoe UI", "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-img[alt="login-img"]{
+div.login-body {
+  margin: 19vh auto;
+}
+
+img[alt="login-img"] {
   display: flex;
   justify-content: center;
-  margin: 100px auto 0px;
+  margin: auto;
   display: block;
   width: 5em;
   transition: 0.4s;
@@ -21,9 +24,9 @@ form.form-log {
   position: relative;
 }
 
-input {
-  border: 1px #c8c8c8 solid;
-  font-size: 15px;
+input.log-input {
+  border: 1px solid #c8c8c8;
+  font-size: medium;
   padding: 10px;
   margin: 10px;
   border-radius: 10px;
@@ -31,12 +34,13 @@ input {
 }
 
 input.btn {
+  border: 1px solid #418ba2;
   padding: 10px 30px;
+  margin: 10px;
   border-radius: 10px;
   color: #0b1360;
   font-weight: bold;
   background-color: #219ebc;
-  border-color: #418ba2;
 }
 
 p.title {
@@ -44,7 +48,7 @@ p.title {
   justify-content: center;
   color: #0078b8;
   margin: 0px;
-  font-size: 50px;
+  font-size: 40px;
   font-style: italic;
   font-weight: bolder;
   transition: 0.2s;
@@ -59,9 +63,11 @@ p.title {
   background-color: #0077b6;
 }
 
-.form-log-end {
+div.form-log-end {
   display: flex;
   align-items: center;
+  padding: 10px;
+  margin: 10px;
   transition: 0.2s;
 }
 
@@ -70,8 +76,7 @@ a.forgot {
   color: #ffa602;
 }
 
-
-@media (max-width: 483px) {
+@media (max-width: 768px) {
   p.title {
     font-size: 27px;
   }
@@ -86,7 +91,7 @@ a.forgot {
     font-size: 15px;
   }
 
-  img {
+  img[alt="login-img"] {
     width: 3em;
   }
 

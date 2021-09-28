@@ -12,31 +12,25 @@
     <title>SignUp</title>
   </head>
   <body>
-    <div>
-      <a
-        ><img src="https://i.ibb.co/GFGC13W/add-user.png" alt="signup-img"
-      /></a>
-      <p class="title">SIGN UP</p>
-    </div>
-    <form action="" method="get" class="form-sign">
-      <div class="form-sign">
-        <input type="text" placeholder="Name" />
+    <div class="signup-body">
+      <div>
+        <img src="https://i.ibb.co/GFGC13W/add-user.png" alt="signup-img" />
+        <p class="title">SIGN UP</p>
       </div>
-      <div class="form-sign">
-        <input type="number" placeholder="Identification Number" />
-      </div>
-      <div class="form-sign">
-        <input type="email" placeholder="Email Address" />
-      </div>
-      <div class="form-sign">
-        <input type="text" placeholder="Password" />
-      </div>
-      <div class="form-sign">
+      <form action="" method="get" class="form-sign">
+        <input class="signup-input" type="text" placeholder="Name" />
+        <input
+          class="signup-input"
+          type="number"
+          placeholder="Identification Number"
+        />
+        <input class="signup-input" type="email" placeholder="Email Address" />
+        <input class="signup-input" type="text" placeholder="Password" />
         <input type="submit" value="Register" class="btn" />
+      </form>
+      <div class="recovery">
+        <p>Already have an account?&nbsp;<a class="log" href="#">Log In</a></p>
       </div>
-    </form>
-    <div class="recovery">
-      <p>Already have an account?&nbsp;<a href="#">Log In</a></p>
     </div>
   </body>
 </html>
