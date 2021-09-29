@@ -73,29 +73,47 @@ form .button input {
 }
 label[for="files"]{
     background-color: #219EBC;
+    border-radius: 10px;
+    padding: 10px;
+}
+label[for="files"]:active{
+    background-color: #0077b6;
+}
+label[for="files"]:hover{
+    background-color: #58b6cd;
 }
 
-
+.btn:hover{
+    background-color: #58b6cd;
+}
+.btn:active{
+    background-color: #0077b6;
+}
 
 @media (max-width: 425px) {
     .title {
-      font-size: 27px;
+      font-size: 25px;
     }
     span{
-      font-size: 0.6em;
+      font-size: 13px;
       display: block;
     }
   
     input[type="text"],
     input[type="file"],
-    input[type="number"],
-    input[type="submit"] {
-      width: 150px;
+    input[type="number"]{
+      width: 200px;
       font-size: 15px;
+    }
+    .btn{
+        width: 150px;
+    }
+    label[for="files"]{
+        padding: 10px;
     }
     img {
       width: 3em;
-      padding-right: 5em;
+      padding-right: 6em;
     }
     .image{
         display: flex;

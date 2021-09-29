@@ -7,11 +7,9 @@ body{
 .caja-main{
     display: flex;
     flex-direction: column;
-    
-    padding: 10px 10px 10px 10px;
-    padding-left: 70px;
-    padding-right: 70px;
     justify-content: flex-start;
+    padding: 10px 70px;
+    margin: 10px 300px;
     border-radius: 20px;
     background-color:#e2e2e2;
     border: 1px solid #c5c5c5;
@@ -21,7 +19,7 @@ h1{
    
     text-transform:uppercase;     
     font-style:oblique;
-    font-size: 50px;
+    font-size: 40px;
     font-weight: bolder;
     display: flex;
     justify-content: center;
@@ -47,23 +45,37 @@ label{
 }
 
 input{
+    font-size: 15px;
     display: flex;
     border-radius: 20px;
     align-items: center;
     font-size:large;
-    padding: 10px 30px;
-   
+    padding: 10px;
+    outline: none;
+    border:1px solid #c8c8c8;
+    border-bottom-width: 2px;
+    padding: 10px;
+    
 
+}
+input:active{
+    border-color: #ffa602;
 }
 textarea{
     display: flex;
     border-radius: 20px;
-    align-items: center;
+
     font-size:large;
-    box-shadow: inset 20px 0px #209dbc;
-    padding:30px;
+        /* box-shadow: inset 20px 0px #209dbc; */
+        outline: none;
+        border:1px solid #c8c8c8;
+        border-bottom-width: 2px;
+        padding: 10px 30px;
 }
-.boton{
+textarea:active{
+    border-color: #ffa602;
+}
+.btn{
     display: flex;
     color: #0b1360;
     background-color: #209dbc;
@@ -73,29 +85,53 @@ textarea{
     align-self: center;
     transition: 0.2s;
 }
-.boton:hover{
+.btn:hover{
     background-color: #58b6cd;
 
 }
-.boton:active{
+.btn:active{
     background-color: #0077b6;
 }
 .casilla{
     display: flex;
     width: 90%;
-    box-shadow: inset 20px 0px #209dbc;
+    /* box-shadow: inset 20px 0px #209dbc; */
 }
 
-/* .circulo{
-    display: flex; 
-    width: 80px;
-    border-radius: 20px;
-    background-color: brown;
-    
-    
-} */
 #mensaje{
     display: flex;
-    height: 200px;
+    padding: 100px 0px;
    
 }
+
+/*-------Diseño Responsive-----*/
+@media (max-width: 425px) {
+    body{
+        display: flex;
+        flex-direction: column;
+        margin: 50px 20px;
+    }
+    .main-contact {
+      font-size: 20px;
+    }
+  
+    input[type="text"],
+    input[type="email"],
+    textarea[type="text"]{
+      font-size: 15px;
+    }
+
+    .caja-main{
+        align-items: center;
+        padding:20px 0px;
+        margin: 0px;
+    }
+    label{
+        padding-left: 10px;
+        font-size: 15px;
+    }
+    .btn{
+        padding: 10px 30px;
+    }
+
+  }
