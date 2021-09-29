@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,600;0,700;1,600;1,700&display=swap');
-
 * {
     margin: 0;
     padding: 0;
@@ -27,13 +25,12 @@ body{
 }
 .image img{
     padding-left: 100px;
+    width: auto;           /*aprox 15em*/
 }
 
 .container h1{
-    /* text-align: center; */
     font-style: italic;
     color: #023E8A;
-    /* margin: 9px 0 9px 0; */
 }
 
 
@@ -54,8 +51,11 @@ body{
     padding-left: 15px;
     border-bottom-width: 2px;
 }
-#file{
-    border:none;
+input:active{
+    border-color: #ffa602;
+}
+.subir-imagen{
+   border:1px #023E8A;
 }
 form .button {
     margin-top: 18px;
@@ -65,9 +65,45 @@ form .button {
 
 form .button input {
     padding: 10px 30px;
-    color: rgba(11, 19, 96, 1);
+    color: rgba(11, 19, 96, 1); 
     font-weight: 900;
     background: #219EBC;
     border: px solid rgba(170, 168, 168, 1);
     border-radius: 10px;
 }
+label[for="files"]{
+    background-color: #219EBC;
+}
+
+
+
+@media (max-width: 425px) {
+    .title {
+      font-size: 27px;
+    }
+    span{
+      font-size: 0.6em;
+      display: block;
+    }
+  
+    input[type="text"],
+    input[type="file"],
+    input[type="number"],
+    input[type="submit"] {
+      width: 150px;
+      font-size: 15px;
+    }
+    img {
+      width: 3em;
+      padding-right: 5em;
+    }
+    .image{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .input-text{
+        display: flex;
+        align-items: center;
+    }
+  }
