@@ -16,7 +16,7 @@ body{
 }
 
 footer { 
-    position: relative;
+    position: fixed;
     width: 100%;
     background: #707070;
     /*display: flex;
@@ -26,7 +26,6 @@ footer {
 
 footer .container{
     display: flex;
-    justify-content: space-between;
     align-items: center;
     color: white;
     max-width: 974px;
@@ -34,6 +33,7 @@ footer .container{
 }
 
 .logo {
+    margin-top: 9px;
     width: 150px;
 }
 
@@ -53,8 +53,11 @@ ul.clase  {
 
 .contact-information {
     display: flex;
-    justify-content: left;
-    padding: 9px 0px;
+    padding: 9px 0;
+}
+
+.contact-information:first-child{
+    margin-top: 9px;
 }
 
 .contact-information p {
@@ -67,6 +70,8 @@ ul.clase  {
     position: absolute;
     bottom: 10px;
     left: 10px;
+    margin-left: 50px;
+    font-size: 12px;
 }
 
 footer .wave {
@@ -74,7 +79,76 @@ footer .wave {
     position: relative;
 }
 
+@media (max-width: 795px) {
+    .container{
+        flex-direction: column;
+        max-width:100%;
+    } 
 
+    .logo{
+        display: none;
+    }
 
+    .container h3 {
+        margin-top: 10px;
+        font-size: 25px;
+    }
+
+    .contact-information{
+        padding: 3px 0;
+    }
+
+    .contact-information span{
+        font-size: 16px;
+    }
+
+    .contact-information p{
+        font-size: 16px;
+    }
+ 
+    .wave p {
+        margin-left: 5px;
+        font-size: 10px;
+    }
+} 
+
+@media (max-width: 425px) {
+
+    .container h3 {
+        font-size: 20px;
+    }
+
+    .contact-information span{
+        font-size: 13px;
+    }
+
+    .contact-information p{
+        font-size: 13px;
+    }
+
+    .wave p {
+        font-size: 8px;
+    }
+} 
+
+@media (max-width: 320px) {
+
+    .container h3 {
+        font-size: 20px;
+    }
+
+    .contact-information span{
+        font-size: 10px;
+    }
+
+    .contact-information p{
+        font-size: 10px;
+    }
+ 
+    .wave p {
+        margin-left: 5px;
+        font-size: 6px;
+    }
+} 
 
 
