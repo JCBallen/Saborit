@@ -1,68 +1,61 @@
 body, html {
-    height: 100%;
     font-family:'Open Sans', 'Helvetica Neue', sans-serif, Arial;         /*Letras por si no hay open sans*/
    /* border:  none;  */
    margin:0px;
-   padding:0px;
 }
 
 /* Hero image camion */
 .hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/heroRecorte.jpeg");     /* Oscurece un poco la imagen para que sea mas facil leer */
-  height: 60%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("https://i.ibb.co/r7Jc76d/hero-Camion.jpg");     /* Oscurece un poco la imagen para que sea mas facil leer */
+  /* height: 60%; */
 
   /* Posicionar la Hero Image*/
   background-position: center;
   background-repeat: no-repeat;                    /*No repite la imagen por defecto*/
   background-size: cover;                             /*Escala la imagen al mayor tamaño posible sin deformarla y le recorta una seccion*/
-  position: relative;                               /*Clase "padre"*/
-  font-size: larger;
 
+
+  /* position: relative; */
 }
 
                                                              /* Mayusculas en el texto*/
-h1{
-    
+.main-text{
+    font-size: 40px;
+
     text-transform:uppercase;                        
     color:#0b1360;                                    
-    /* line-height: 10px; */
     font-size: 65px;
-    letter-spacing: 5px;
-    word-spacing: 10px;
 
-    /* color:#0b1360; 
-    text-transform:uppercase;    
-    display: flex;
 
+/*                   
+    line-height: 10px;
     letter-spacing: 5px;
-    word-spacing: 10px;  */
-                        
+    word-spacing: 10px;                     */
 }
 
 /* Posicionar el texto en la imagen */
 .hero-text {
 
-   
-    text-align: center;
-    position: absolute;                      
-    top: 65%;                        
-    left: 50%;
-    transform: translate(-50%, -50%);
-  
-    /* display: flex;
-    flex-flow:center wrap;
-    position: absolute;
-    text-align:justify;
-    justify-content: center;
-    align-content: flex-end; */
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+   padding: 200px 200px;
+
+   /* text-align: center;
+   position: absolute;                      
+   top: 65%;                        
+   left: 50%;
+   transform: translate(-50%, -50%);
+     */
 }
 
 .hero-text p{
     display: flex;
     font-weight: bold;                                   /*negrilla*/
-    line-height: 35px;                          /*Interlineado*/
+    /* line-height: 35px; */
     color: white;
-    font-size: x-large;
+    font-size: 40px;
     letter-spacing: 2px;
 
    
@@ -73,15 +66,12 @@ h1{
     text-transform: uppercase;
     color:#0b1360;  
     font-size: 40px;
-
-    
-    position: absolute;                       /*Clase "hija"*/
-    bottom: 30%;                          /*Posicionamiento*/
-    left:5%;
-
+    padding-left: 50px;
     
 }
-
+.main-box{
+    margin: 50px;
+}
 .caja1{
     padding: 50px 100px;
   
@@ -89,21 +79,10 @@ h1{
     width: 85%;
     margin:40px;
     margin-top: 80px;
-    margin-bottom: 90px;
  /*Posicionamiento*/
-
- 
-    padding-bottom:10px ;  
-  
-    /* display: inline-block; */
     display: flex;
     justify-content:flex-start;
     align-content: center;
-
-    
-
-    /* column-count: 2;
-    column-gap: 30%;                           */
     
     overflow: hidden;                         
     border-radius: 70px 70px 70px 70px;                          
@@ -118,7 +97,7 @@ h1{
     justify-content:center;
     align-content: center;
     flex-direction: column;
-width: 50%;
+    width: 50%;
     
     font-size: 50px;
     color: rgba(0, 0, 0, 0.5);
@@ -183,3 +162,58 @@ width: 50%;
     top:30%;
     left:200px;
 }
+
+@media (max-width: 425px) {
+    body{
+        display: flex;
+        flex-direction:column ;
+        margin: 0px;
+    }
+
+    .hero-image{
+        padding: 50px 0px;
+   
+    }
+    .main-text{
+      font-size: 20px;
+    }
+
+    .hero-text{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding:10px;
+        margin-top: 50px;
+        
+        /* line-height: 1; */
+    }
+    .hero-text p{
+        font-size: 10px;
+    }
+    .main-box{
+        margin: 10px;
+    }
+    .caja1{
+        padding: 0px 10px;
+        border-radius: 20px;
+        margin: 0px;
+        width: 90%;
+
+    }
+    .header-servicios{
+        font-size: 15px;
+        padding-left: 10px;
+    }
+    .texto1-caja1{
+        font-size: 15px;
+        padding-top:10px;
+    }
+    .imagenes-caja{
+        align-items: flex-start;
+    }
+    .imagenes-caja{
+        margin:0px;
+        transform: scale(0.3);
+        
+    }
+  }
