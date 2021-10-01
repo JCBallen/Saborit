@@ -16,11 +16,12 @@ header{
 
 .logo {
     cursor: pointer;
-    width: 150px;
+    width: 135px;
     height: 80px;
     float: left;
     line-height: 80px;
     margin-left: 50px;
+    padding: 9px 0;
 }
 
 .navbar1 {
@@ -55,7 +56,7 @@ header{
 }
 
 .navbar2 {
-    padding: 9px;
+    
     background: white;
     box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
 }
@@ -88,11 +89,11 @@ header{
 
 .navbar2 ul ul {
     position: absolute;
-    top: 100px;
+    top: 80px;
+    background: white;
     /*border-top: 3px solid rgba(0, 0, 0, 0.09);*/
     box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
-    opacity: 0;
-    visibility: hidden;
+    display: none;
     transition: top .3s;
 }
 
@@ -103,6 +104,10 @@ header{
     float: none;
     display: list-item;
     border-bottom: 1px solid #464646;
+}
+
+.navbar2 ul li:hover .submenu{
+    display: block;
 }
 
 .navbar2 ul ul li:last-child{
@@ -162,9 +167,8 @@ header{
     }
 
     .logo{
-        width: 135px;
-        height: 68px;
         margin-left: 30px;
+        margin-bottom: none;
     }
 
     .navbar2 ul {
@@ -190,8 +194,8 @@ header{
     .navbar2 .logo {
         margin-left: 30px;
         width: 120px;
-        height: 60px;
-        margin-bottom: 12px;
+        height: 75px;
+        margin-bottom: 5px;
     }
 
     .navbar2 ul {
