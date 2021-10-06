@@ -209,7 +209,7 @@ input.btn {
  .quote-container{
     display: flex;
     flex-direction: column;
-    margin: 150px auto;
+    margin: 180px auto 50px auto;
     max-width: 1400px;
     background: #D5D5D5;
     padding: 25px 30px;
@@ -265,6 +265,7 @@ input.btn {
  /*Tracking*/
 
  .track-container{
+    margin-top: 110px;
     display: flex;
     height: 100vh;
     justify-content: center;
