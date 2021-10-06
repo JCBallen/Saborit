@@ -1,0 +1,648 @@
+body, html {
+    font-family:'Open Sans', 'Helvetica Neue', sans-serif, Arial;         /*Letras por si no hay open sans*/
+   margin:0px;
+   background-color: #d5d5d5;
+   height: 100vh;                 /* altura viewport */
+
+   
+}
+
+/* Hero image camion */
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("https://i.ibb.co/r7Jc76d/hero-Camion.jpg");     /* Oscurece un poco la imagen para que sea mas facil leer */
+
+  /* Posicionar la Hero Image*/
+  background-position: center;
+  background-repeat: no-repeat;                    /*No repite la imagen por defecto*/
+  background-size: cover;                             /*Escala la imagen al mayor tamaño posible sin deformarla y le recorta una seccion*/
+
+
+  /* position: relative; */
+}
+
+                                                             /* Mayusculas en el texto*/
+.main-text{
+    font-size: 40px;
+
+    text-transform:uppercase;                        
+    color:#0b1360;                                    
+    font-size: 65px;
+
+
+/*                   
+    line-height: 10px;
+    letter-spacing: 5px;
+    word-spacing: 10px;                     */
+}
+
+/* Posicionar el texto en la imagen */
+.hero-text {
+
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+   padding: 200px 200px;
+
+}
+
+.hero-text p{
+    display: flex;
+    font-weight: bold;                                   /*negrilla*/
+    /* line-height: 35px; */
+    color: white;
+    font-size: 40px;
+    letter-spacing: 2px;
+
+   
+}
+
+.header-servicios{
+    
+    text-transform: uppercase;
+    color:#0b1360;  
+    font-size: 40px;
+    padding-left: 50px;
+    
+}
+.main-box{
+    margin: 50px;
+}
+.caja1{
+    padding: 50px 100px;
+  
+    background:rgba(88, 183, 205, 0.35) ;
+    width: 85%;
+    margin:40px;
+    margin-top: 80px;
+ /*Posicionamiento*/
+    display: flex;
+    justify-content:flex-start;
+    align-content: center;
+    
+    overflow: hidden;                         
+    border-radius: 70px 70px 70px 70px;                          
+    
+}
+.imagenes-caja{
+    display: flex;
+    flex-direction: column;
+}
+.texto1-caja1{
+    display: flex;
+    justify-content:center;
+    align-content: center;
+    flex-direction: column;
+    width: 50%;
+    
+    font-size: 50px;
+    color: rgba(0, 0, 0, 0.5);
+}
+.parrafo-cool1{                          /*estilizado WHICH CAN BE*/
+    text-transform: uppercase;
+    font-weight: bold;
+    color:#ffffff;
+    /* -webkit-column-break-after:always;                */
+    padding-left: 20%;
+    
+    
+}
+.imagenes-caja{
+    margin-left: 200px;
+}
+
+.circulo{
+    display: flex;
+    width: 150px;
+    height: 150px;
+    background-color: #ffffff;
+    border-radius: 100%;
+    border: 5px solid #58b7cd;
+    position: relative;
+    
+}
+.circulo > .zanahoria{
+   display: flex;
+    position: absolute;
+    top:7%;
+    left:13%;
+    width: 80%;
+    height: 80%;
+    
+ }
+
+ .circulo > .carromercado{
+    display: flex;
+    position: absolute;
+    top:10%;
+    left:8%;
+    width: 80%;
+    height: 80%;
+    
+ }
+ .circulo > .maquina{
+    display: flex;
+    position: absolute;
+    top:12%;
+    left:13%;
+    width: 80%;
+    height: 80%;
+    
+ }
+
+.circulo p{
+    font-size: 25px;
+    font-weight: bold;
+    position: absolute;
+    top:30%;
+    left:200px;
+}
+/*------------------------------Responsive ---------------------------------------*/
+
+@media (max-width: 1350px) {
+    .hero-image{
+        padding: 100px 0px;
+   
+    }
+    .main-text{
+      font-size: 55px;
+    }
+
+    .hero-text{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding:10px 80px;
+        margin-top: 50px;
+        
+    }
+    .hero-text p{
+        font-size: 25px;
+    }
+    .main-box{
+        margin:40px;
+    }
+    .caja1{
+        align-items: center;
+        border-radius: 20px;
+        padding: 30px 50px;
+        /* width: 90%; */
+
+
+    }
+    .header-servicios{
+        font-size: 30px;
+        padding-left: 40px;
+    }
+    .texto1-caja1{
+        display: flex;
+        align-items: flex-start;
+        font-size: 30px;
+        text-align: justify;
+
+        padding: 0px;      
+        
+    }
+    .imagenes-caja{
+        margin-left: 20px;
+        transform: scale(0.8);
+      
+        
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .hero-image{
+        padding: 90px 0px;
+   
+    }
+    .main-text{
+      font-size: 45px;
+    }
+
+    .hero-text{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 0px 50px;
+        margin-top: 50px;
+        
+    }
+    .hero-text p{
+        font-size: 15px;
+    }
+    .main-box{
+        margin: 30px;
+    }
+    .caja1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 10px;
+        border-radius: 20px;
+        margin: 0px 30px;
+        
+        /* width: 90%; */
+
+    }
+    .header-servicios{
+        font-size: 25px;
+    }
+    .texto1-caja1{
+
+        justify-content: center;
+        font-size: 20px;
+        margin-top:20px;
+        text-align: justify;
+        width: 90%;
+        
+    }
+    .imagenes-caja{
+        transform: scale(0.7);
+        width: 100%;
+        padding-left: 100px;
+    }
+  }
+
+
+@media (max-width: 425px) {
+    body{
+        margin: 0px;
+    }
+
+    .hero-image{
+        padding: 70px 0px;
+   
+    }
+    .main-text{
+      font-size: 35px;
+    }
+
+    .hero-text{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding:10px;
+        margin-top: 50px;
+        
+    }
+    .hero-text p{
+        font-size: 10px;
+    }
+    .main-box{
+        margin: 10px;
+    }
+    .caja1{
+        flex-direction: column;
+        align-items: center;
+        padding:0px;
+        margin: 0px 20px;
+        border-radius: 20px;
+        
+        /* width: 90%; */
+
+
+    }
+    .header-servicios{
+        font-size: 20px;
+        padding-left: 10px;
+    }
+    .texto1-caja1{
+        display: flex;
+        justify-content: center;
+        font-size: 20px;
+        margin-top:20px;
+        text-align: justify;
+        width: 90%;
+        
+    }
+    .imagenes-caja{
+        transform: scale(0.6);
+        width: 100%;
+        padding-right: 200px;
+        
+    }
+  }
+
+
+
+
+  /*----------------------------Contact Us------------------*/
+
+
+.contact-container{
+    margin: 180px auto 50px auto;
+}
+.caja-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 10px 70px;
+    margin: 10px 300px;
+    border-radius: 20px;
+    background-color:#e2e2e2;
+    border: 1px solid #c5c5c5;
+
+}
+h1{
+   
+    text-transform:uppercase;     
+    font-style:oblique;
+    font-size: 40px;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    color:#0b1360;   
+    word-spacing: 10px;
+    
+
+}
+form.form-contact{
+    padding-top:30px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    /* background-color: chartreuse; */
+}
+.contact-label{
+    display: flex;
+    align-self: flex-start;
+    padding-left: 30px;
+    font-size: 20px;
+    color: #414141;
+
+}
+
+.contact-input{
+    font-size: 15px;
+    display: flex;
+    border-radius: 20px;
+    font-size:large;
+    outline: none;
+    border:1px solid #c8c8c8;
+    border-bottom-width: 2px;
+    padding: 10px;
+    width: 90%;
+
+}
+input:active{
+    border-color: #ffa602;
+}
+textarea{
+    display: flex;
+    border-radius: 20px;
+    font-size:large;
+        outline: none;
+        border:1px solid #c8c8c8;
+        border-bottom-width: 2px;
+
+}
+textarea:active{
+    border-color: #ffa602;
+}
+.btn-contact{
+    display: flex;
+    color: #0b1360;
+    background-color: #209dbc;
+    font-weight: bold;
+    padding: 20px 50px;
+    border-color: #419ba2;
+    align-self: center;
+    transition: 0.2s;
+
+
+    font-size: 15px;
+    display: flex;
+    border-radius: 20px;
+    font-size:large;
+    outline: none;
+    border:1px solid #c8c8c8;
+    border-bottom-width: 2px;
+}
+.btn-contact:hover{
+    background-color: #58b6cd;
+
+}
+.btn-contact:active{
+    background-color: #0077b6;
+}
+.casilla-textarea{
+    display: flex;
+    width: 90%;
+}
+
+#mensaje{
+    display: flex;
+    padding: 100px 0px;
+   
+}
+
+/*-------Diseño Responsive Contact us-----*/
+
+@media (max-width: 1283px) {
+ 
+    .contact-container{
+        margin: 100px 50px;
+        max-width: 100%;
+ 
+    }
+
+    .main-contact {
+      font-size: 35px;
+    }
+  
+    .contact-input[type="text"],
+    .contact-input[type="email"],
+    textarea[type="text"]{
+      font-size: 15px;
+
+    }
+
+    .caja-main{
+
+        padding:40px 50px;
+        margin: 0px;
+    }
+    .contact-label{
+        padding-left: 50px;
+        font-size: 20px;
+    }
+    .btn-contact{
+        padding: 20px 40px;
+    }
+
+  }
+
+@media (max-width: 768px) {
+  
+    .main-contact {
+      font-size: 30px;
+    }
+  
+    .contact-input[type="text"],
+    .contact-input[type="email"],
+    textarea[type="text"]{
+      font-size: 15px;
+    }
+
+    .caja-main{
+        padding:20px 40px;
+        margin: 0px;
+    }
+    .contact-label{
+        padding-left: 30px;
+        font-size: 20px;
+    }
+    .btn-contact{
+        padding: 15px 40px;
+    }
+
+  }
+
+@media (max-width: 425px) {
+
+    .main-contact {
+      font-size: 20px;
+    }
+  
+    .contact-input[type="text"],
+    .contact-input[type="email"],
+    textarea[type="text"]{
+      font-size: 10px;
+    }
+
+    .caja-main{
+        padding:20px 30px;
+        margin: 0px;
+    }
+    .contact-label{
+        padding-left: 10px;
+        font-size: 15px;
+    }
+    .btn-contact{
+        padding: 10px 30px;
+        border-radius: 15px;
+    }
+
+  }
+
+
+
+
+  /*-----------------------Formulario administrador---------*/
+
+  .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    box-sizing: border-box;
+
+}
+
+.image {
+    margin: auto;
+}
+.image img{
+    padding-left: 100px;
+    width: auto;           /*aprox 15em*/
+}
+
+.container h1{
+    font-style: italic;
+    color: #023E8A;
+}
+
+
+.container .input-text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 9px 0 9px 0;
+    
+}
+
+.input-text input {
+    padding: 10px;
+    width: 100%;
+    outline: none;
+    border-radius: 12px;
+    border: 1px solid rgba(170, 168, 168, 1);
+    padding-left: 15px;
+    border-bottom-width: 2px;
+}
+.input-text input:active{
+    border-color: #ffa602;
+}
+.subir-imagen{
+   border:1px #023E8A;
+}
+form .button {
+    margin-top: 18px;
+    display: flex;
+    justify-content: center;
+}
+
+form .button input {
+    padding: 10px 30px;
+    color: rgba(11, 19, 96, 1); 
+    font-weight: 900;
+    background: #219EBC;
+    border: px solid rgba(170, 168, 168, 1);
+    border-radius: 10px;
+}
+.select-img[for="files"]{
+    background-color: #219EBC;
+    border-radius: 10px;
+    padding: 10px;
+}
+.select-img[for="files"]:active{
+    background-color: #0077b6;
+}
+.select-img[for="files"]:hover{
+    background-color: #58b6cd;
+}
+
+.btn-admin:hover{
+    background-color: #58b6cd;
+}
+.btn-admin:active{
+    background-color: #0077b6;
+}
+
+@media (max-width: 425px) {
+    .title {
+      font-size: 25px;
+    }
+    span{
+      font-size: 13px;
+      display: block;
+    }
+  
+    .input-text input[type="text"],
+    .input-text input[type="file"],
+    .input-text input[type="number"]{
+      width: 200px;
+      font-size: 15px;
+    }
+    .btn-admin{
+        width: 150px;
+    }
+    .select-img[for="files"]{
+        padding: 10px;
+    }
+    img {
+      width: 3em;
+      padding-right: 6em;
+    }
+    .image{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .input-text{
+        display: flex;
+        align-items: center;
+    }
+  }

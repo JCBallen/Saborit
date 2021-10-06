@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    display: flex;
+    height: 100vh;                 /* altura viewport */
+    justify-content: center;
+    align-items: center;
+   
+    background: #D5D5D5;
+}
+
+.container{
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.image {
+    margin: auto;
+}
+.image img{
+    padding-left: 100px;
+    width: auto;           /*aprox 15em*/
+}
+
+.container h1{
+    font-style: italic;
+    color: #023E8A;
+}
+
+
+.container .input-text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 9px 0 9px 0;
+    
+}
+
+.input-text input {
+    padding: 10px;
+    width: 100%;
+    outline: none;
+    border-radius: 12px;
+    border: 1px solid rgba(170, 168, 168, 1);
+    padding-left: 15px;
+    border-bottom-width: 2px;
+}
+.input-text input:active{
+    border-color: #ffa602;
+}
+.subir-imagen{
+   border:1px #023E8A;
+}
+form .button {
+    margin-top: 18px;
+    display: flex;
+    justify-content: center;
+}
+
+form .button input {
+    padding: 10px 30px;
+    color: rgba(11, 19, 96, 1); 
+    font-weight: 900;
+    background: #219EBC;
+    border: px solid rgba(170, 168, 168, 1);
+    border-radius: 10px;
+}
+.select-img[for="files"]{
+    background-color: #219EBC;
+    border-radius: 10px;
+    padding: 10px;
+}
+.select-img[for="files"]:active{
+    background-color: #0077b6;
+}
+.select-img[for="files"]:hover{
+    background-color: #58b6cd;
+}
+
+.btn-admin:hover{
+    background-color: #58b6cd;
+}
+.btn-admin:active{
+    background-color: #0077b6;
+}
+
+@media (max-width: 425px) {
+    .title {
+      font-size: 25px;
+    }
+    span{
+      font-size: 13px;
+      display: block;
+    }
+  
+    .input-text input[type="text"],
+    .input-text input[type="file"],
+    .input-text input[type="number"]{
+      width: 200px;
+      font-size: 15px;
+    }
+    .btn-admin{
+        width: 150px;
+    }
+    .select-img[for="files"]{
+        padding: 10px;
+    }
+    img {
+      width: 3em;
+      padding-right: 6em;
+    }
+    .image{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .input-text{
+        display: flex;
+        align-items: center;
+    }
+  }
