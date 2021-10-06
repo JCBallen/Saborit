@@ -53,6 +53,11 @@ input.input{
     border-radius: 12px;
 }
 
+input.input:focus{
+    outline: none;
+    border-color: orange;
+}
+
 input.btn {
     border: 1px solid #418ba2;
     padding: 10px 30px;
