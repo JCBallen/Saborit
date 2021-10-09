@@ -4,15 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="design.css" />
     <title>Our Trucks</title>
   </head>
   <body class="ot-body">
     <section class="main-ot">
       <div class="ot">
         <h2>OUR TRUCKS</h2>
+        <br>
         <p>We have a variety of trucks that support loads up to x lb</p>
         <p>
+          <br>
           All our roads are <strong>Brand New</strong> equipement 2021 and 2022
         </p>
       </div>
@@ -30,3 +32,7 @@
     <!-- <div id="fondo"></div> -->
   </body>
 </html>
+<?php
+include "Navbar.php";
+include "footer.php";
+?>

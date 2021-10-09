@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
-    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="design.css">
 </head>
 <body>
     <div class="contact-container">
@@ -36,3 +36,7 @@
 </div>
 </body>
 </html>
+<?php
+include "Navbar.php";
+include "footer.php";
+?>

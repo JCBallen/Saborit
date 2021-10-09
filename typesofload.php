@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="design.css" />
     <title>Types Of Load</title>
   </head>
   <body class="tl-body">
@@ -31,10 +31,13 @@
                 words, to a single customer.
             </li>
         </ul>
-        <img src="https://i.ibb.co/3yv14L3/camion.jpg" alt="camion" />
+        <img src="https://i.ibb.co/3fFGBM7/Camion.png" alt="camion" />
         <img src="https://i.ibb.co/hRwpq46/mid.jpg" alt="mid" />
         <img src="https://i.ibb.co/7RQyv7J/full.jpg" alt="full" />
-      
     </div>
   </body>
 </html>
+<?php
+include "Navbar.php";
+include "footer.php";
+?>

@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Saborit Express</title>
-    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="design.css">
 </head>
-<body>
+<body class="landing-body">
     <div class="hero-image">
         <div class="hero-text">
           <h1 class="main-text">Around usa</h1>
@@ -45,4 +45,7 @@
     </div>
 </body>
 </html>
-
+<?php
+include "Navbar.php";
+include "footer.php";
+?>
