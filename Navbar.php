@@ -21,7 +21,7 @@
                 </ul>
             </div>
             <nav class="navbar2">
-                <a href="landing.php"><img class="logo" src="https://i.ibb.co/1G4Zj02/Recurso-17.png" alt="logo"></a>
+                <a href="index.php"><img class="logo" src="https://i.ibb.co/1G4Zj02/Recurso-17.png" alt="logo"></a>
                     <label for="btn" class="btn-menu">
                         <span class="material-icons">menu</span>
                     </label>
