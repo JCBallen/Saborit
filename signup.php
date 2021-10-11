@@ -18,18 +18,18 @@
         <p class="title">SIGN UP</p>
       </div>
       <form action="" method="get" class="form-sign">
-        <input class="signup-input" type="text" placeholder="Name" />
+        <input class="signup-input" type="text" placeholder="Name" required/>
         <input
           class="signup-input"
           type="number"
-          placeholder="Identification Number"
+          placeholder="Identification Number" required
         />
-        <input class="signup-input" type="email" placeholder="Email Address" />
-        <input class="signup-input" type="password" placeholder="Password" />
+        <input class="signup-input" type="email" placeholder="Email Address" required/>
+        <input class="signup-input" type="password" placeholder="Password" required/>
         <input type="submit" value="Register" class="btn" />
       </form>
       <div class="recovery">
-        <p>Already have an account?&nbsp;<a class="log" href="#">Log In</a></p>
+        <p>Already have an account?&nbsp;<a class="log" href="login.php">Log In</a></p>
       </div>
     </div>
   </body>

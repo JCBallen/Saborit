@@ -18,8 +18,8 @@
         <p class="title">LOG IN</p>
       </div>
       <form action="" method="get" class="form-log">
-        <input class="log-input" type="email" placeholder="Email Address" />
-        <input class="log-input" type="password" placeholder="Password" />
+        <input class="log-input" type="email" placeholder="Email Address" oninvalid="this.setCustomValidity('Texto personalizado')" required/>
+        <input class="log-input" type="password" placeholder="Password" oninvalid="this.setCustomValidity('Texto personalizado')" required/>
         <div class="form-log-end">
           <input type="checkbox" id="btn" />
           <label for="btn">Remember me&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>

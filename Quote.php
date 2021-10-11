@@ -15,12 +15,12 @@
             <div class="title"><h1>GET A QUOTE</h1></div>
             <form class="form-quote">
                 <div class="type-details">
-                    <input type="radio" name="type-of-chargo" id="dot-1">
-                    <input type="radio" name="type-of-chargo" id="dot-2">
-                    <input type="radio" name="type-of-truck" id="dot-3">
-                    <input type="radio" name="type-of-truck" id="dot-4">
-                    <input type="radio" name="continuity" id="dot-5">
-                    <input type="radio" name="continuity" id="dot-6">
+                    <input type="radio" name="type-of-chargo" id="dot-1" >
+                    <input type="radio" name="type-of-chargo" id="dot-2" >
+                    <input type="radio" name="type-of-truck" id="dot-3" >
+                    <input type="radio" name="type-of-truck" id="dot-4" >
+                    <input type="radio" name="continuity" id="dot-5" >
+                    <input type="radio" name="continuity" id="dot-6" >
                     <h4>Type of Chargo</h4>
                         <div class="category">
                             <label for="dot-1">
