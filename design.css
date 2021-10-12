@@ -527,7 +527,9 @@ textarea:active{
   .contact-input[type="email"],
   textarea[type="text"]{
     font-size: 15px;
+    width: 90%;
   }
+
 
   .caja-main{
       padding:20px 40px;
@@ -774,7 +776,7 @@ a.log {
 }
 
 form.form-sign {
-  padding: 50px 0px 0px 0px;
+  padding: 30px 0px 0px 0px;
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -787,6 +789,7 @@ input.signup-input {
   margin: 10px;
   border-radius: 10px;
   border-bottom-width: 2px;
+  width: 30%;
 }
 
 input.signup-input:focus {
@@ -905,7 +908,7 @@ img[alt="login-img"] {
 }
 
 form.form-log {
-  padding: 50px 0px 0px 0px;
+  padding: 30px 0px 0px 0px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -919,6 +922,7 @@ input.log-input {
   margin: 10px;
   border-radius: 10px;
   border-bottom-width: 2px;
+  width:30%;
 }
 
 input.log-input:focus {
@@ -926,7 +930,7 @@ input.log-input:focus {
   border-color: orange;
 }
 
-input.btn {
+input.btn-rm {
   border: 1px solid #418ba2;
   padding: 10px 30px;
   margin: 10px;
@@ -2175,7 +2179,7 @@ ul.class  {
 
     .track-container{
         width: 100%;
-        position: fixed;
+        /* position: fixed; */
     }
 
     .track-container .image {
@@ -2227,7 +2231,7 @@ ul.class  {
 
     .footer-container{
         flex-direction: column;
-        max-width:100%;
+        width:100%;
         padding: 15px;
     } 
 
@@ -2286,8 +2290,10 @@ ul.class  {
         height: 70px;
     }
 
-    .input-text .input{
-        width: 100%;
+    .input-text {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
     }
 
     .information p{

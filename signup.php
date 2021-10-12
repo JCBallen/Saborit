@@ -18,18 +18,37 @@
         <p class="title">SIGN UP</p>
       </div>
       <form action="" method="get" class="form-sign">
-        <input class="signup-input" type="text" placeholder="Name" required/>
+        <input class="signup-input" type="text" placeholder="Name" oninvalid="this.setCustomValidity('Required Field')" required />
         <input
           class="signup-input"
           type="number"
-          placeholder="Identification Number" required
+          placeholder="Identification Number"
+          oninvalid="this.setCustomValidity('Required Field')"
+          required
         />
-        <input class="signup-input" type="email" placeholder="Email Address" required/>
-        <input class="signup-input" type="password" placeholder="Password" required/>
+        <input
+          class="signup-input"
+          type="email"
+          placeholder="Email Address"
+          oninvalid="this.setCustomValidity('Required Field')"
+          required
+        />
+        <input
+          class="signup-input"
+          type="password"
+          placeholder="Password"
+          oninvalid="this.setCustomValidity('Required Field')"
+          required
+        />
         <input type="submit" value="Register" class="btn" />
       </form>
+      <br>
       <div class="recovery">
-        <p>Already have an account?&nbsp;<a class="log" href="login.php">Log In</a></p>
+        <p>
+          Already have an account?&nbsp;<a class="log" href="login.php"
+            >Log In</a
+          >
+        </p>
       </div>
     </div>
   </body>

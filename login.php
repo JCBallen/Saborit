@@ -18,11 +18,11 @@
         <p class="title">LOG IN</p>
       </div>
       <form action="" method="get" class="form-log">
-        <input class="log-input" type="email" placeholder="Email Address" oninvalid="this.setCustomValidity('Texto personalizado')" required/>
-        <input class="log-input" type="password" placeholder="Password" oninvalid="this.setCustomValidity('Texto personalizado')" required/>
+        <input class="log-input" type="email" placeholder="Email Address" oninvalid="this.setCustomValidity('Required Field')" required/>
+        <input class="log-input" type="password" placeholder="Password" oninvalid="this.setCustomValidity('Required Field')" required/>
         <div class="form-log-end">
-          <input type="checkbox" id="btn" />
-          <label for="btn">Remember me&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+          <input type="checkbox" id="btn-rm" />
+          <label for="btn-rm">&nbsp;Remember me&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
           <a class="forgot" href="#">Forgot Password?</a>
         </div>
         <div class="form-log">
