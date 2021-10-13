@@ -10,75 +10,64 @@
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
         rel="stylesheet">
     </head>
+    
     <body class="quote-body">
+        
         <div class="quote-container">
             <div class="title"><h1>GET A QUOTE</h1></div>
-            <form class="form-quote">
+            <form name="formq" class="form-quote" action="" method="">
                 <div class="type-details">
-                    <input type="radio" name="type-of-chargo" id="dot-1" >
-                    <input type="radio" name="type-of-chargo" id="dot-2" >
-                    <input type="radio" name="type-of-truck" id="dot-3" >
-                    <input type="radio" name="type-of-truck" id="dot-4" >
-                    <input type="radio" name="continuity" id="dot-5" >
-                    <input type="radio" name="continuity" id="dot-6" >
+                    
                     <h4>Type of Chargo</h4>
-                        <div class="category">
-                            <label for="dot-1">
-                                <span class="dot one"></span>
-                                <span class="type-of-chargo">Less than Truckload</span>
-                            </label>
-                        </div>
-                        <div class="category">
-                            <label for="dot-2">
-                                <span class="dot two"></span>
-                                <span class="type-of-chargo">Full Truckload</span>
-                            </label>
-                        </div>
+                    <div class="choose">
+                        <input type="radio" name="typeofchargo" id="ltl">
+                        <label for="ltl">Less than Truckload</label>
+                        <input type="radio" name="typeofchargo" id="tl">
+                        <label for="tl">Full Truckload</label>
+                    </div>
+
                     <h4>Type of Truck</h4>
-                        <div class="category">
-                            <label for="dot-3">
-                                <span class="dot three"></span>
-                                <span class="type-of-truck">Dry Van</span>
-                            </label>
+                    <div class="choose">
+                        <input type="radio" name="typeoftruck" id="dry">
+                        <label for="dry" onclick="hideReefer();">Dry Van</label>
+                        <input type="radio" name="typeoftruck" id="reefer">
+                        <label for="reefer" onclick="showReefer();">Reefer</label>
+                    </div>
+
+                    <div id="journey">
+                        <h4>Is your journey continous?</h4>
+                            <div class="choose">
+                            <input type="radio" name="continuity" id="yes">
+                            <label for="yes">Yes</label>
+                            <input type="radio" name="continuity" id="no">
+                            <label for="no">No</label>
                         </div>
-                        <div class="category">
-                            <label for="dot-4">
-                                <span class="dot four"></span>
-                                <span class="type-of-truck">Reefer</span>
-                            </label>
-                        </div>
-                    <h4>Is your journey continous?</h4>
-                        <div class="category">
-                            <label for="dot-5">
-                                <span class="dot five"></span>
-                                <span class="continuity">Yes</span>
-                            </label>
-                        </div>
-                        <div class="category">
-                            <label for="dot-6">
-                                <span class="dot six"></span>
-                                <span class="continuity">No</span>
-                            </label>
-                        </div>
+                    </div>
+
                 </div>
                 <div class="cargo-details">
                     <h4>Pickup Information</h4>
-                    <input type="text" class="input" placeholder="Insert Adress"><br> 
+                    <input id="pickup" type="text" class="input" placeholder="Insert Address"><br> 
                     <h4>Delivery Information</h4>
-                    <input type="text" class="input" placeholder="Insert Adress"><br> 
+                    <input id="delivery" type="text" class="input" placeholder="Insert Address"><br> 
                     <h4>Shipment Information</h4>
                     <div class="input-number">
-                        <input type="number" class="input" placeholder="Weight (lb)">
-                        <input type="number" class="input" placeholder="Lenght (in)">
-                        <input type="number" class="input" placeholder="Temperature (°F)">
+                        <input id="weight" type="number" class="inputn" placeholder="Weight (lb)">
+                        <input id="length" type="number" class="inputn" placeholder="Length (in)">
+                        <div id="temperature"><input id="temp" type="number" class="inputn" placeholder="Temperature (°F)" required oninvalid="this.setCustomValidity('Please fill out this field.')"></div>
                     </div>
                 </div>
-                <input type="submit" class="btn" value="View"> 
+                <div id="error"></div>
+                <input type="submit" class="btn" value="View" onclick="return validateQuote();"> 
             </form>
         </div>
+
+        <script src="Javascript.js"></scrip
+            
     </body>
 </html>
 <?php
 include "Navbar.php";
 include "footer.php";
-?>
+?>    
+

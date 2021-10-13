@@ -1502,7 +1502,7 @@ ul li a{
     text-decoration: none;
 }
 
-input.input{
+.input, .inputn{
     width: 100%;
     border: 1px solid #c8c8c8;
     border-bottom-width: 2px;
@@ -1511,7 +1511,7 @@ input.input{
     border-radius: 12px;
 }
 
-input.input:focus{
+input.input:focus, input.inputn:focus{
     outline: none;
     border-color: orange;
 }
@@ -1720,51 +1720,77 @@ body.quote-body{
     box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
 }
 
-.form-quote .input{
+.form-quote .input, .inputn{
     margin-bottom: 10px;
 }
 
-.form-quote .input-number .input{
-    margin-bottom: 20px;
-    width: 33%;
-}
-
-.form-quote .category {
-    display: inline-flex;
-    width: 40%;
+.form-quote .input-number{
+    display: flex;
     justify-content: space-between;
-    margin-bottom: 10px;
 }
 
-.type-details .category label {
+.form-quote .input-number .inputn{
+    margin-bottom: 20px;
+    width: 49%;
+}
+
+#journey, #temperature{
+    display: none;
+}
+
+.choose {
     display: flex;
     align-items: center;
 }
 
-.type-details .category .dot {
-    height: 18px;
-    width: 18px;
-    background: white;
-    border-radius: 50%;
-    border: 5px solid transparent;
-    margin-right: 10px;
-    transition: all 0.3s ease;
-}
-
-#dot-1:checked ~ .category label .one,
-#dot-2:checked ~ .category label .two,
-#dot-3:checked ~ .category label .three,
-#dot-4:checked ~ .category label .four,
-#dot-5:checked ~ .category label .five,
-#dot-6:checked ~ .category label .six {
-    border-color: white;
-    background: #219EBC;
-}
-
-.form-quote input[type="radio"]{
+input[type="radio"]{
     display: none;
 }
 
+label {
+    position: relative;
+    cursor: pointer;
+    display: inline-flex;
+    width: 40%;
+    margin-bottom: 10px;
+}
+
+label::before {
+    content: "";
+    border: 2px solid whitesmoke;
+    background: white;
+    width: 15px;
+    height: 15px;
+    margin: 2px 10px;
+    margin-left: 0;
+    border-radius: 50%;
+}
+
+label::after{
+    content: "";
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    background: #219dbc0c;
+    left: 4px;
+    top: 4px;
+    margin: 2px 10px;
+    margin-left: 0;
+    border-radius: 50%;
+
+    transition: all 0.3s;
+}
+
+input[type="radio"]:checked + label::after {
+    background: #219EBC;
+}
+
+#error{
+    display: flex;
+    flex-direction: column;
+    color: darkorange;
+    font-weight: bold;
+}
 
 
 
@@ -1811,6 +1837,15 @@ body.quote-body{
     width: 670px;
     border-radius: 12px;
     margin-top: 9px;
+}
+
+#info, #error{
+    display: none;
+}
+
+#error p{
+    font-weight: bold;
+    color: darkorange;
 }
 
 .track-container .information {
