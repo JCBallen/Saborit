@@ -63,10 +63,11 @@
         </div>
 
         <script src="Javascript.js"></scrip
-        <?php
-        include "Navbar.php";
-        include "footer.php";
-        ?>    
+            
     </body>
 </html>
+<?php
+include "Navbar.php";
+include "footer.php";
+?>    
 
