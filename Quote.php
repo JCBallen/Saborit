@@ -61,7 +61,7 @@
             </form>
         </div>
 
-        <script src="app.js" type="text/javascript"></script>
+        <script src="appQuote.js" type="text/javascript"></script>
   </body>
 </html>
 <?php
