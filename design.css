@@ -14,7 +14,7 @@
 
 
 body.landing-body{
-  font-family:'Open Sans', 'Helvetica Neue', sans-serif, Arial;         /*Letras por si no hay open sans*/
+  font-family:'Open Sans', sans-serif;         
  margin:0px;
  background-color: #d5d5d5;
  height: 100vh;                 /* altura viewport */
@@ -444,6 +444,13 @@ textarea{
 textarea:active{
   border-color: #ffa602;
 }
+
+#errorcontact{
+  text-align: center;
+  color: darkorange;
+  font-weight: bold;
+}
+
 .btn-contact{
   display: flex;
   color: #0b1360;
@@ -797,6 +804,12 @@ input.signup-input:focus {
   border-color: orange;
 }
 
+#errorsignup{
+  text-align: center;
+  color: darkorange;
+  font-weight: bold;
+}
+
 input.btn {
   border: 1px solid #418ba2;
   padding: 10px 30px;
@@ -928,6 +941,12 @@ input.log-input {
 input.log-input:focus {
   outline: none;
   border-color: orange;
+}
+
+#errorlogin{
+  text-align: center;
+  color: darkorange;
+  font-weight: bold;
 }
 
 input.btn-rm {
