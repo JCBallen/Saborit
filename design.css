@@ -1747,7 +1747,7 @@ input[type="radio"]{
     display: none;
 }
 
-label {
+.choose label {
     position: relative;
     cursor: pointer;
     display: inline-flex;
@@ -1755,7 +1755,7 @@ label {
     margin-bottom: 10px;
 }
 
-label::before {
+.choose label::before {
     content: "";
     border: 2px solid whitesmoke;
     background: white;
@@ -1766,7 +1766,7 @@ label::before {
     border-radius: 50%;
 }
 
-label::after{
+.chooselabel::after{
     content: "";
     position: absolute;
     width: 11px;
@@ -2308,11 +2308,11 @@ ul.class  {
         justify-content: space-between;
     }
 
-    label{
+    .choose label{
         width: 100%;
     }
 
-    label::before{
+    .choose label::before{
         margin: 2px 3px;
     }
 
