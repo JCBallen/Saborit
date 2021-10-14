@@ -1716,7 +1716,7 @@ body.quote-body{
     max-width: 1400px;
     background: #D5D5D5;
     padding: 25px 30px;
-    border-radius: 10px;
+    border-radius: 3px;
     box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
 }
 
@@ -1785,9 +1785,7 @@ input[type="radio"]:checked + label::after {
     background: #219EBC;
 }
 
-#error{
-    display: flex;
-    flex-direction: column;
+#errorquote{
     color: darkorange;
     font-weight: bold;
 }
@@ -1839,11 +1837,11 @@ input[type="radio"]:checked + label::after {
     margin-top: 9px;
 }
 
-#info, #error{
-    display: none;
+#info, #errortrack{
+    visibility: hidden;
 }
 
-#error p{
+#errortrack p{
     font-weight: bold;
     color: darkorange;
 }
@@ -2064,10 +2062,6 @@ ul.class  {
      .navbar2 ul li{
          padding: 0 8px;
      }
-
-     .form-quote .input-number .input{
-        width: 32.5%;
-    }
  }
  
  @media (max-width: 843px){
@@ -2206,10 +2200,6 @@ ul.class  {
         max-width: 100%;
     } 
 
-    .form-quote .type-details .category {
-        width: 100%;
-    } 
-
     /*Tracking*/
 
     .track-container{
@@ -2314,8 +2304,16 @@ ul.class  {
 
      /*Get a Quote*/
 
-    .form-quote .input-number .input{
-        width: 32%;
+    .choose{
+        justify-content: space-between;
+    }
+
+    label{
+        width: 100%;
+    }
+
+    label::before{
+        margin: 2px 3px;
     }
 
      /*Tracking*/
