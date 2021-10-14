@@ -18,29 +18,27 @@
         <p class="title">SIGN UP</p>
       </div>
       <form action="" method="get" class="form-sign">
-        <input class="signup-input" type="text" placeholder="Name" oninvalid="this.setCustomValidity('Required Field')" required />
+        <input id="name" class="signup-input" type="text" placeholder="Name"/>
         <input
+          id="number"
           class="signup-input"
           type="number"
           placeholder="Identification Number"
-          oninvalid="this.setCustomValidity('Required Field')"
-          required
         />
         <input
+          id="email"
           class="signup-input"
           type="email"
           placeholder="Email Address"
-          oninvalid="this.setCustomValidity('Required Field')"
-          required
         />
         <input
+          id="password"
           class="signup-input"
           type="password"
           placeholder="Password"
-          oninvalid="this.setCustomValidity('Required Field')"
-          required
         />
-        <input type="submit" value="Register" class="btn" />
+        <div id="errorsignup"></div>
+        <input type="submit" value="Register" class="btn" onclick='return validateSignUp()'/>
       </form>
       <br>
       <div class="recovery">
@@ -51,6 +49,7 @@
         </p>
       </div>
     </div>
+    <script src="appSignUp.js"></script>
   </body>
 </html>
 <?php
