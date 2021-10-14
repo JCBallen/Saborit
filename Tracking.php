@@ -40,7 +40,7 @@
             </div>
         </div>
 
-        <script src="app.js" type="text/javascript"></script>
+        <script src="appTrack.js" type="text/javascript"></script>
   </body>
 </html>
 <?php
