@@ -86,9 +86,9 @@ background-size: cover;                             /*Escala la imagen al mayor 
   padding: 50px 100px;
 
   background:rgba(88, 183, 205, 0.35) ;
-  width: 85%;
+  width: 95%;
   margin:40px;
-  margin-top: 80px;
+  margin-bottom: 100px;
 /*Posicionamiento*/
   display: flex;
   justify-content:flex-start;
@@ -117,7 +117,7 @@ background-size: cover;                             /*Escala la imagen al mayor 
   font-weight: bold;
   color:#ffffff;
   /* -webkit-column-break-after:always;                */
-  padding-left: 20%;
+  padding-left: 10%;
   
   
 }
@@ -261,6 +261,11 @@ background-size: cover;                             /*Escala la imagen al mayor 
       /* width: 90%; */
 
   }
+  .parrafo-cool1{
+    margin: auto;
+  }
+
+
   .header-servicios{
       font-size: 25px;
   }
@@ -277,6 +282,7 @@ background-size: cover;                             /*Escala la imagen al mayor 
       transform: scale(0.7);
       width: 100%;
       padding-left: 100px;
+      margin-right: 100px;
   }
 }
 
@@ -315,7 +321,7 @@ background-size: cover;                             /*Escala la imagen al mayor 
       margin: 0px 20px;
       border-radius: 20px;
       
-      /* width: 90%; */
+      width: 90%;
 
 
   }
@@ -335,7 +341,8 @@ background-size: cover;                             /*Escala la imagen al mayor 
   .imagenes-caja{
       transform: scale(0.6);
       width: 100%;
-      padding-right: 200px;
+      margin-right: 150px;
+
       
   }
 }

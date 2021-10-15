@@ -26,7 +26,7 @@
     <h2 class="header-servicios">services we offer</h2>
     <div class="caja1">
         <div class="texto1-caja1">
-          <p>Thanks to our large and sturdy trucks, we can load a wide variety of items.</p>
+          <p>Thanks to our large and sturdy trucks, we can load a wide variety of items.</p><br>
           <p class="parrafo-cool1">which can be</p>
         </div>
         
