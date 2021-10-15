@@ -1842,6 +1842,7 @@ input[type="radio"]:checked + label::after {
     padding: 20px;
     background: #D5D5D5;
     flex-direction: column;
+    margin-bottom: 30px;
 }
 
 .track-container .image {
