@@ -14,7 +14,7 @@
   </head>
 
   <body style="background: #d5d5d5">
-    <div class="track-container">
+    <div id="track-container" class="track-container">
             <img class="image" src="https://i.ibb.co/smdP7BB/Placeholder.png" alt="Placeholder">
             <h1>SHIPPING TRACKER</h1>
             <form id="form-track">
