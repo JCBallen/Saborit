@@ -1827,7 +1827,6 @@ input[type="radio"]:checked + label::after {
  /*Tracking*/
 
  .track-container{
-    margin-top: 110px;
     display: flex;
     height: 100vh;
     justify-content: center;
@@ -1857,7 +1856,7 @@ input[type="radio"]:checked + label::after {
 }
 
 #info, #errortrack{
-    visibility: hidden;
+    display: none;
 }
 
 #errortrack p{
@@ -2391,4 +2390,11 @@ ul.class  {
         font-size: 10px;
         margin-left: 0;
     }
+ }
+
+@media (max-height: 800px){
+   .mapa{
+     width: 200px;
+     height: 200px;
+   }
  }
