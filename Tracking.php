@@ -19,8 +19,8 @@
             <h1>SHIPPING TRACKER</h1>
             <form id="form-track">
                 <div class="input-text">
-                    <span>Input yout ID given via email to see real-time location</span><br>
-                    <input id="code" type="number" class="input" placeholder="Tracker Code" onfocus="hideInfoTracker()"><br>
+                    <span>Input yout ID given via email to see real-time location</span>
+                    <input id="code" type="number" class="input" placeholder="Tracker Code" onfocus="hideInfoTracker()">
                 </div>
                 <input class="btn" type="submit" value="Submit" onclick="return showInfoTracker()">
             </form><br>
