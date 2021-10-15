@@ -2406,4 +2406,10 @@ ul.class  {
     }
  }
 
+ @media (max-height: 800px){
+   .mapa{
+     width: 200px;
+     height: 200px;
+   }
+ }
 
