@@ -2236,6 +2236,10 @@ ul.class  {
         width: 80px;
         height: 80px;
     }
+   
+   .track-container h1{
+      font-size: 30px;
+    }
 
     .track-container .information {
         flex-direction: column;
