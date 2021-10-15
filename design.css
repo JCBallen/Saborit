@@ -2348,8 +2348,8 @@ ul.class  {
      /*Tracking*/
 
      .track-container .image {
-        width: 70px;
-        height: 70px;
+     width: auto;
+     padding: 0px;
     }
 
     .input-text {
