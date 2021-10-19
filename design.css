@@ -1945,9 +1945,24 @@ input[type="radio"]:checked + label::after {
     opacity: 0.5;
 }
 
+div.drivers a#logout{
+  align-self: flex-end;
+  
+  text-decoration: none;
+  color: white;
+  font-size: 1.2em;
+  background-color:#023E8A;
+  margin-right: 20px;
+  margin-bottom: 50px;
+  padding: 5px 15px;
+  border-radius: 5px;
+  z-index: 100;
+}
+
 .drivers h1 {
     z-index: 1;
     text-shadow: 2px 2px 5px white;
+    text-transform: uppercase;
 }
 
 .pretitle {
@@ -2284,6 +2299,10 @@ ul.class  {
         font-size: 20px;
     }
 
+    a#logout{
+      margin-top:100px;
+    }
+
     /*Footer*/
 
     .footer-container{
@@ -2388,7 +2407,12 @@ ul.class  {
         align-items: center;
         flex-direction: column;
         max-width: 100%;
+        
     } 
+    
+    a#logout{
+      margin-top:100px;
+    }
 
      /*Footer*/
 

@@ -1,14 +1,13 @@
 <?php
 
-$link='mysql:host=localhost;dbname=primerdb';
+$link='mysql:host=localhost;dbname=SaboritDB';
 $usuario='root';
 $pass='root';
 
 try{
     $pdo=new PDO($link,$usuario,$pass);
-    echo 'Conectado';
+    #echo 'Conectado';
 }catch(PDOException $e){
     print "¡Error!: ".$e->getMessage()."<br>";
     die();
 }
-?>

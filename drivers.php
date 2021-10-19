@@ -1,3 +1,14 @@
+<?php
+
+#VALIDA SI EXISTE UNA SESIÓN ACTIVA
+session_start();
+if(isset($_SESSION['user'])){
+}else{
+    header('location:index.php');
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
@@ -10,7 +21,8 @@
 </head>
 <body>
     <div class="drivers">
-        <h1 class="title">WELCOME</h1>
+        <a id=logout href="logout.php">Cerrar Sesión</a>
+        <h1 class="title">WELCOME <?php echo $_SESSION['user']; ?> </h1>
         <div class="drivers-container">
             <div class="card-1">
                 <h3 class="pretitle">FLEET STATUS</h3>
@@ -27,6 +39,5 @@
 </body>
 </html>
 <?php
-include "Navbar.php";
 include "footer.php";
 ?>
