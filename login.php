@@ -4,6 +4,7 @@ session_start();
 
 #include_once 'conexion.php';
 
+if (isset($_POST['log-correo'])){
 $usuario_login=$_POST['log-correo'];
 $contrasena_login=$_POST['log-contrasena'];
 
@@ -38,6 +39,7 @@ if($resultado){
 
 $sentencia=null;
 $resultado=null;
+}
 ?>
 
 
