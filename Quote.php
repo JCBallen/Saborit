@@ -14,7 +14,7 @@
   <body class="quote-body">
             <div class="quote-container">
             <div class="title"><h1>GET A QUOTE</h1></div>
-            <form name="formq" class="form-quote" action="" method="">
+            <form id="formq" name="formq" class="form-quote" action="" method="">
                 <div class="type-details">
                     
                     <h4>Type of Chargo</h4>
@@ -44,11 +44,20 @@
                     </div>
 
                 </div>
-                <div class="cargo-details">
-                    <h4>Pickup Information</h4>
-                    <input id="pickup" type="text" class="input" placeholder="Insert Address"><br>
-                    <h4>Delivery Information</h4>
-                    <input id="delivery" type="text" class="input" placeholder="Insert Address"><br>
+                <div id="cargo-details" class="cargo-details">
+                    <div class="form-group">
+                        <h4>Origin</h4>
+                        <div class="col-xs-4">
+                            <input type="text" id="from" placeholder="Enter a location" class="input">
+                        </div>
+                   </div>
+                   <div class="form-group">
+                        <h4>Destination</h4>
+                        <div class="col-xs-4">
+                            <input type="text" id="to" placeholder="Enter a location" class="input">
+                        </div>
+                      
+                     </div>
                     <h4>Shipment Information</h4>
                     <div class="input-number">
                         <input id="weight" type="number" class="inputn" placeholder="Weight (lb)">
@@ -57,10 +66,33 @@
                     </div>
                 </div>
                 <div id="errorquote"></div>
-                <input type="submit" class="btn" value="View" onclick='return validateQuote()'> 
             </form>
+            <div class="button">
+                <input class="btn" type="submit" value="View" onclick="calcRoute();">
+            </div>
+            <div id="loading"></div>
+            <div id="container-fluid">
+                <div id="googleMap"></div>
+                <div id="summary">
+                    <ul class="summary-list">
+                        <li><b>Origin:   </b><span id="pickup"></span></li>
+                        <li><b>Destination:   </b><span id="delivery"></span></li>
+                        <li><b>Distance in Miles:   </b><span id="miles"></span></li>
+                        <li><b>Duration:   </b><span id="duration"></span></li>
+                        <li><b>Type of Chargo:   </b><span id="chargo"></span></li>
+                        <li><b>Type of Truck:   </b><span id="truck"></span></li>
+                    </ul>
+                </div>
+                <div id="output">
+                    Final Price: <span id="price"></span> USD
+                </div>
+            </div>
         </div>
-
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJ9WgRdqBiW9OyG3eSc5geRXrZ6lWXQjk&libraries=places&language=en"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="Scripts/jquery-3.1.1.min.js"></script>
         <script src="appQuote.js" type="text/javascript"></script>
   </body>
 </html>
