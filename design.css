@@ -2271,7 +2271,11 @@ ul.class  {
 
     .quote-container{
         max-width: 100%;
-    } 
+    }
+   
+    .col-xs-4 input{
+        width: 100%;
+    }
 
     /*Tracking*/
 
