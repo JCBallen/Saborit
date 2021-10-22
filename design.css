@@ -1775,7 +1775,7 @@ input[type="radio"]{
     display: none;
 }
 
-label {
+.type-details label {
     position: relative;
     cursor: pointer;
     display: inline-flex;
@@ -1783,7 +1783,7 @@ label {
     margin-bottom: 10px;
 }
 
-label::before {
+.type-details label::before {
     content: "";
     border: 2px solid whitesmoke;
     background: white;
@@ -1794,7 +1794,7 @@ label::before {
     border-radius: 50%;
 }
 
-label::after{
+.type-details label::after{
     content: "";
     position: absolute;
     width: 11px;
@@ -1809,7 +1809,7 @@ label::after{
     transition: all 0.3s;
 }
 
-input[type="radio"]:checked + label::after {
+input[type="radio"]:checked + .type-details label::after {
     background: #219EBC;
 }
 
