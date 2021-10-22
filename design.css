@@ -1837,6 +1837,8 @@ input[type="radio"]:checked + label::after {
 
 #output {
     text-align: center;
+    font-weight: bold;
+    font-size: 18px;
     background: #0b1360;
     color: white;
     padding: 10px;
