@@ -1775,7 +1775,7 @@ input[type="radio"]{
     display: none;
 }
 
-.choose label, #journey label {
+label {
     position: relative;
     cursor: pointer;
     display: inline-flex;
@@ -1783,7 +1783,7 @@ input[type="radio"]{
     margin-bottom: 10px;
 }
 
-.choose label::before, #journey label::before {
+label::before {
     content: "";
     border: 2px solid whitesmoke;
     background: white;
@@ -1794,7 +1794,7 @@ input[type="radio"]{
     border-radius: 50%;
 }
 
-.choose label::after, #journey label::after{
+label::after{
     content: "";
     position: absolute;
     width: 11px;
@@ -1809,11 +1809,7 @@ input[type="radio"]{
     transition: all 0.3s;
 }
 
-input[type="radio"]:checked + .choose label::after {
-    background: #219EBC;
-}
-
-input[type="radio"]:checked + #journey label::after {
+input[type="radio"]:checked + label::after {
     background: #219EBC;
 }
 
@@ -2402,15 +2398,15 @@ ul.class  {
         justify-content: space-between;
     }
 
-    .choose label{
+    label{
         width: 100%;
     }
 
     .choose label::after{
         left: 6px;
     }
-   
-    .choose label::before{
+
+    label::before{
         margin: 2px 3px;
     }
 
