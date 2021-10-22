@@ -1809,7 +1809,11 @@ input[type="radio"]{
     transition: all 0.3s;
 }
 
-input[type="radio"]:checked + .type-details label::after {
+input[type="radio"]:checked + .choose label::after {
+    background: #219EBC;
+}
+
+input[type="radio"]:checked + #journey label::after {
     background: #219EBC;
 }
 
