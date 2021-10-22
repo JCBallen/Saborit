@@ -2230,7 +2230,7 @@ ul.class  {
          background:transparent;
          display: block;
          position: absolute;
-         right: 30px;
+         right: -200px;
          line-height: 80px;
          font-size: 30px;
          cursor: pointer;
