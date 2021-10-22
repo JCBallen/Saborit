@@ -1762,7 +1762,7 @@ body.quote-body{
     width: 49%;
 }
 
-#journey, #temperature{
+#journey, #temperature, #result, #container-fluid{
     display: none;
 }
 
@@ -1775,7 +1775,7 @@ input[type="radio"]{
     display: none;
 }
 
-.choose label {
+label {
     position: relative;
     cursor: pointer;
     display: inline-flex;
@@ -1783,7 +1783,7 @@ input[type="radio"]{
     margin-bottom: 10px;
 }
 
-.choose label::before {
+label::before {
     content: "";
     border: 2px solid whitesmoke;
     background: white;
@@ -1794,7 +1794,7 @@ input[type="radio"]{
     border-radius: 50%;
 }
 
-.choose label::after{
+label::after{
     content: "";
     position: absolute;
     width: 11px;
@@ -1818,6 +1818,31 @@ input[type="radio"]:checked + label::after {
     font-weight: bold;
 }
 
+#googleMap{
+    margin-top: 20px;
+    width: 100%;
+    height: 300px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border: 1px solid darkblue;
+}
+
+#summary{
+    text-align: center;
+    padding: 20px;
+    background:whitesmoke;
+    border-left: 1px solid darkblue;
+    border-right: 1px solid darkblue;
+}
+
+#output {
+    text-align: center;
+    background: #0b1360;
+    color: white;
+    padding: 10px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
 
 
 
