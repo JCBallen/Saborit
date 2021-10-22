@@ -18,11 +18,11 @@
             <ul class="class">
                 <li class="contact-information">
                     <span class="material-icons">phone_in_talk</span>
-                    <p>931-257-8003</p>
+                    <p>772-812-0738</p>
                 </li>
                 <li class="contact-information">
                     <span class="material-icons">email</span>
-                    <p>saborit.express@gmail.com</p>
+                    <p>saboritexpress@gmail.com</p>
                 </li>
                 <li class="contact-information">
                     <span class="material-icons">location_on</span>

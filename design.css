@@ -609,6 +609,10 @@ textarea:active{
 
 /*-----------------------Formulario administrador---------*/
 
+body.track-admin{
+  background-color: #D5D5D5;
+}
+
 .container{
   margin:0;
   padding:0;
@@ -619,15 +623,16 @@ textarea:active{
   margin: 180px auto 150px auto;
   box-sizing: border-box;
   justify-content: space-around;
-
 }
 
 .image {
-  margin: auto;
+  display: flex;
+  flex-direction: column;
+
 }
 .image img{
-  padding-left: 200px;
-  width: auto;           /*aprox 15em*/
+margin: auto;
+  /* width: auto;           aprox 15em */
 }
 
 .container h1{
@@ -653,7 +658,7 @@ textarea:active{
   padding-left: 15px;
   border-bottom-width: 2px;
 }
-.input-text input:active{
+.input-text input:focus{
   border-color: #ffa602;
 }
 .subir-imagen{
@@ -678,6 +683,7 @@ form .button input {
   border-radius: 10px;
   padding: 10px;
   width: 100%;
+  transition: all 0.2s;
 }
 .select-img[for="files"]:active{
   background-color: #0077b6;
@@ -868,9 +874,7 @@ div.recovery {
     display: block;
   }
 
-  input[type="text"],
-  input[type="email"],
-  input[type="number"] {
+  input.signup-input{
     width: 150px;
     font-size: 15px;
   }
@@ -1863,9 +1867,11 @@ input[type="radio"]:checked + label::after {
     margin-top: 15px;
 }
 
-#info, #errortrack{
+/* #info, */
+ #errortrack{
     display: none;
 }
+
 
 #errortrack p{
     font-weight: bold;
@@ -1888,9 +1894,11 @@ input[type="radio"]:checked + label::after {
     width: 335px;
 }
 
-.mapa{
+#map{
+    height: 300px;
     margin: 0 auto;
     width: 670px;
+    
 }
 
 

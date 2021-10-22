@@ -6,7 +6,11 @@ $pass='root';
 
 try{
     $pdo=new PDO($link,$usuario,$pass);
-    #echo 'Conectado';
+
+    $con=new mysqli("localhost",$usuario,$pass,"SaboritDB");
+    // if($con){
+    //     echo 'Conectado';
+    // }
 }catch(PDOException $e){
     print "¡Error!: ".$e->getMessage()."<br>";
     die();

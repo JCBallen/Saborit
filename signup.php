@@ -1,27 +1,3 @@
-<?php
-
-#include_once 'conexion.php';
-
-if(isset($_POST['nombre']) && isset($_POST['id']) && isset($_POST['correo']) && isset($_POST['contrasena'])){
-  $nombre = $_POST['nombre'];
-  $id = $_POST['id'];
-  $correo = $_POST['correo'];
-  $contrasena = $_POST['contrasena'];
-  $contrasena=password_hash($contrasena,PASSWORD_DEFAULT);
-
-  $sql_add = 'INSERT INTO users (nombre,identificacion,correo,contrasena) VALUES (?,?,?,?)';
-  $sentencia_agregar = $pdo->prepare($sql_add);
-  $sentencia_agregar -> execute(array($nombre,$id,$correo,$contrasena));
-
-  $nombre = null;
-  $id = null;
-  $correo = null;
-  $contrasena = null;
-  $sentencia_agregar = null;
-  $pdo = null;
-}
-
-?>
 
 <!DOCTYPE html>
 <html lang="es">
@@ -42,7 +18,7 @@ if(isset($_POST['nombre']) && isset($_POST['id']) && isset($_POST['correo']) && 
         <img src="https://i.ibb.co/GFGC13W/add-user.png" alt="signup-img" />
         <p class="title">SIGN UP</p>
       </div>
-      <form action="" method="POST" class="form-sign">
+      <form action="back-signup.php" method="POST" class="form-sign">
         <input
           id="name"
           class="signup-input"

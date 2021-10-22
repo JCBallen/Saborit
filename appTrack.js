@@ -1,26 +1,40 @@
 /*Tracking*/
 
-var code = document.getElementById('code');
-
-function showInfoTracker()
-{
-    if(code.value === null || code.value === '')
-    {
-    document.getElementById('errortrack').style.display='block';
-    }
-    else
-    {
-    document.getElementById('track-container').style.marginTop='120px';
-    document.getElementById('info').style.display='block';
-    } 
-    return false
+var bot = document.getElementById("uy");
+bot.addEventListener("click", ojo);
+function ojo() {
+  var req = new XMLHttpRequest();
+  req.onreadystatechange = function () {
+    // var json = JSON.parse(this.responseText);
+    console.log(this.responseText);
+  };
+  req.open("get", "back-track.php", true);
+  req.send();
 }
 
-function hideInfoTracker()
-{
-    document.getElementById('info').style.display='none';
-    document.getElementById('errortrack').style.display='none';      
+
+
+
+var code = document.getElementById("code");
+
+function showInfoTracker() {
+  if (code.value === null || code.value === "") {
+    document.getElementById("errortrack").style.display = "block";
+    return false;
+  }
+  // else
+  // {
+  // document.getElementById('track-container').style.marginTop='1200px';
+  // document.getElementById('info').style.display='block';
+  return false;
+  // }
 }
+
+// function hideInfoTracker()
+// {
+//     document.getElementById('info').style.display='none';
+//     document.getElementById('errortrack').style.display='none';
+// }
 
 /*function validate(idtrackercode)
 {
@@ -37,3 +51,12 @@ function hideInfoTracker()
     console.log("funcionó") 
     }                        
 }*/
+
+function iniciarMap() {
+  var coord = { lat: 4.6833190778731675, lng: -74.042340846865681 };
+  var map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 15,
+    center: coord,
+  });
+  var marker = new google.maps.Marker({ position: coord, map: map });
+}
