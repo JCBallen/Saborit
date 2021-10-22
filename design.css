@@ -2227,10 +2227,11 @@ ul.class  {
      }
  
      .btn-menu{
+         width: 25px;
          background:transparent;
          display: block;
          position: absolute;
-         right: -200px;
+         right: 30px;
          line-height: 80px;
          font-size: 30px;
          cursor: pointer;
