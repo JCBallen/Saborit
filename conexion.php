@@ -7,7 +7,7 @@ $pass='root';
 try{
     $pdo=new PDO($link,$usuario,$pass);
 
-    $con=new mysqli("localhost",$usuario,$pass,"SaboritDB");
+    // $con=new mysqli("localhost",$usuario,$pass,"SaboritDB");
     // if($con){
     //     echo 'Conectado';
     // }

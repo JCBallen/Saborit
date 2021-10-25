@@ -43,13 +43,13 @@
                             <a href="Tracking.php">Tracking</a>
                             <div class="point">
                                 <span class="material-icons" style="font-size: x-small;">fiber_manual_record</span>
-                            </div>
+                            </div>                           
                         </li>
                         <li>
                             <a href="contactUs.php">Contact Us</a>
                             <div class="point">
                                 <span class="material-icons" style="font-size: x-small;">fiber_manual_record</span>
-                            </div>
+                            </div>                           
                         </li>
                         <li>
                             <a class="cta" href="Quote.php"><button>GET A QUOTE</button></a>

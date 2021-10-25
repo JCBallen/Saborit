@@ -21,7 +21,7 @@ if(isset($_SESSION['user'])){
 </head>
 <body>
     <div class="drivers">
-        <a id=logout href="logout.php">Cerrar Sesión</a>
+        <a id=logout href="logout.php">Log Out</a>
         <h1 class="title">WELCOME <?php echo $_SESSION['user']; ?> </h1>
         <div class="drivers-container">
             <div class="card-1">

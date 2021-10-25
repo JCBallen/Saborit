@@ -22,22 +22,38 @@ $resultado = $sentencia->fetch();
 #var_dump($resultado);
 
 #SI USUARIO ESTA EN BASE DE DATOS
-if($resultado){
-
+if($resultado['correo']=="saboritexpress@gmail.com"){
   #SI LA CONTRASEÑA COINCIDE
   if(password_verify($contrasena_login,$resultado['contrasena'])){
     $_SESSION['user'] = $resultado['nombre'];
-    header('location:drivers.php');
+    header('location:TrackingAdmin.php');
     }
     else{
-        header('location:login.php');
-      // echo 'Error Contraseña';
+        // header('location:login.php');
+        echo '<script type="text/javascript">alert("WRONG EMAIL OR PASSWORD!");window.location.href="login.php";</script>';
     }
-  
-}else{
-    header('location:login.php');
-  // echo 'Error Username';
 }
+else
+{
+    if($resultado){
+
+      #SI LA CONTRASEÑA COINCIDE
+      if(password_verify($contrasena_login,$resultado['contrasena'])){
+        $_SESSION['user'] = $resultado['nombre'];
+        header('location:drivers.php');
+        }
+        else{
+            // header('location:login.php');
+            echo '<script type="text/javascript">alert("WRONG EMAIL OR PASSWORD!");window.location.href="login.php";</script>';
+        }
+      
+    }else{
+        // header('location:login.php');
+        echo '<script type="text/javascript">alert("WRONG EMAIL OR PASSWORD!");window.location.href="login.php";</script>';
+        }
+}
+
+
 
 $sentencia=null;
 $resultado=null;

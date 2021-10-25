@@ -9,6 +9,15 @@ if(isset($_POST['nombre']) && isset($_POST['id']) && isset($_POST['correo']) && 
   $contrasena = $_POST['contrasena'];
   $contrasena=password_hash($contrasena,PASSWORD_DEFAULT);
 
+  #VERIFICA SI USUARIO EXISTE
+  $sql='SELECT * FROM users WHERE correo = ?';
+  $sentencia = $pdo->prepare($sql);
+  $sentencia->execute(array($correo));
+  $resultado = $sentencia->fetch();
+
+  if($resultado){
+    echo '<script type="text/javascript">alert("EMAIL ALREADY REGISTERED!");window.location.href="signup.php";</script>';
+  }else{
   $sql_add = 'INSERT INTO users (nombre,identificacion,correo,contrasena) VALUES (?,?,?,?)';
   $sentencia_agregar = $pdo->prepare($sql_add);
   $sentencia_agregar -> execute(array($nombre,$id,$correo,$contrasena));
@@ -21,5 +30,5 @@ if(isset($_POST['nombre']) && isset($_POST['id']) && isset($_POST['correo']) && 
   $pdo = null;
 
   header('location:signup.php');
-
+  }
 }

@@ -1,16 +1,10 @@
 /*Tracking*/
 
-var bot = document.getElementById("uy");
-bot.addEventListener("click", ojo);
-function ojo() {
-  var req = new XMLHttpRequest();
-  req.onreadystatechange = function () {
-    // var json = JSON.parse(this.responseText);
-    console.log(this.responseText);
-  };
-  req.open("get", "back-track.php", true);
-  req.send();
-}
+// var bot = document.getElementById("uy");
+// bot.addEventListener("click", ojo);
+// function ojo() {
+  
+// }
 
 
 
@@ -26,7 +20,7 @@ function showInfoTracker() {
   // {
   // document.getElementById('track-container').style.marginTop='1200px';
   // document.getElementById('info').style.display='block';
-  return false;
+  return true;
   // }
 }
 
@@ -52,11 +46,4 @@ function showInfoTracker() {
     }                        
 }*/
 
-function iniciarMap() {
-  var coord = { lat: 4.6833190778731675, lng: -74.042340846865681 };
-  var map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 15,
-    center: coord,
-  });
-  var marker = new google.maps.Marker({ position: coord, map: map });
-}
+
