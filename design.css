@@ -1703,7 +1703,7 @@ input.btn {
  .navbar2 .point{
    position: absolute;
      padding: 0 50px;
-     top: 30px;
+     top: 15px;
      opacity: 0%;
      
      width: 150px;
@@ -1714,7 +1714,7 @@ input.btn {
  .navbar2 .point:hover{
    position: absolute;
      margin: 0 auto;
-     top: 45px;
+     top: 15px;
      opacity: 100%;
      background: none;
  }

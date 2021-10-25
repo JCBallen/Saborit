@@ -28,11 +28,11 @@
                     <input class="checkbox" type="checkbox" id="btn">
                     <ul>
                         <li>
-                            <label for="btn-1" class="btn-submenu">Shipping +</label>
-                            <a href="#shipping" class="shipping">Shipping +</a>
+                            <label for="btn-1" class="btn-submenu">Shipping </label>
+                            <a href="#shipping" class="shipping">Shipping 
                             <div class="point">
                                 <span class="material-icons" style="font-size: x-small;">fiber_manual_record</span>
-                            </div>
+                            </div></a>
                             <input class="checkbox" type="checkbox" id="btn-1">
                             <ul class="submenu">
                                 <li><a href="ourtrucks.php">Our Trucks</a></li>
@@ -40,16 +40,16 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="Tracking.php">Tracking</a>
+                            <a href="Tracking.php">Tracking
                             <div class="point">
                                 <span class="material-icons" style="font-size: x-small;">fiber_manual_record</span>
-                            </div>                           
+                            </div></a>                           
                         </li>
                         <li>
-                            <a href="contactUs.php">Contact Us</a>
+                            <a href="contactUs.php">Contact Us
                             <div class="point">
                                 <span class="material-icons" style="font-size: x-small;">fiber_manual_record</span>
-                            </div>                           
+                            </div></a>                           
                         </li>
                         <li>
                             <a class="cta" href="Quote.php"><button>GET A QUOTE</button></a>
