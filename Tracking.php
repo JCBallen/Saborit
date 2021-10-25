@@ -40,7 +40,7 @@
           id="uy"
         />
       </form>
-      <br />
+      <br/>
       <div id="errortrack"><p>Enter a valid number.</p></div>
       <div id="info">
         <div class="information">
@@ -49,7 +49,7 @@
           <?php
 
           include_once 'conexion.php';
-          $default="none";
+          $default="--";
           // header('location:tracking.php');
           if (isset($_POST['track-id'])){
           // $idtrack=$_POST['track-id'];
@@ -114,8 +114,8 @@
 
       var lati="<?php echo $resultado["lt"]; ?>";
       var longa="<?php echo $resultado["lg"]; ?>";
-      if(lati==""){lati=40.68924429483078}else{lati=parseFloat(lati);}
-      if(longa==""){longa=-74.04451783657005}else{longa=parseFloat(longa);}
+      if(lati==""){lati=38.763538}else{lati=parseFloat(lati);}
+      if(longa==""){longa=-97.802882}else{longa=parseFloat(longa);}
 
       // console.log(lati);   
       // alert(typeof longa);
