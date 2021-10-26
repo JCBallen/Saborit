@@ -41,6 +41,8 @@ function validateSignUp() {
   errorSignUp.innerHTML = "*Succesfully Registered.";
   errorSignUp.style.margin = "10px";
   errorSignUp.style.color = "green";
+
+
   //   errorSignUp.innerHTML = messagesSignUp.join(" <br> ");
   return true;
 }

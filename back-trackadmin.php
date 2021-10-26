@@ -1,6 +1,7 @@
 <?php
 session_start();
 include_once 'conexion.php';
+include 'TrackingAdmin.php';
 
 
 if (isset($_POST['track-code']) && isset($_POST['track-lat']) && isset($_POST['track-long']) && isset($_POST['track-miles']) && isset($_POST['track-time'])){
@@ -22,8 +23,15 @@ if (isset($_POST['track-code']) && isset($_POST['track-lat']) && isset($_POST['t
     $sql_edit="UPDATE tracker SET lt=?,lg=?,miles=?,arrivalTime=?  WHERE code = ?";
     $sentencia_edit=$pdo->prepare($sql_edit);
     $sentencia_edit->execute(array($latitud,$longitud,$millas,$tiempo,$codigo));
-    echo '<script type="text/javascript">alert("TRACKING CODE SUCCESSFULLY UPDATED");window.location.href="TrackingAdmin.php";</script>';
-    
+    // echo '<script type="text/javascript">alert("TRACKING CODE SUCCESSFULLY UPDATED");window.location.href="TrackingAdmin.php";</script>';
+    echo '<script type="text/javascript" defer>
+          var notifications = document.getElementById("notifications");
+          notifications.innerHTML = "*Tracking Code UPDATED.";
+          notifications.style.margin = "10px";
+          notifications.style.textAlign = "center";
+          notifications.style.fontWeight = "bolder";
+          notifications.style.color = "green";
+          </script>';
   }else{
     
     $sql_add = 'INSERT INTO tracker (code,lt,lg,miles,arrivalTime) VALUES (?,?,?,?,?)';
@@ -37,7 +45,15 @@ if (isset($_POST['track-code']) && isset($_POST['track-lat']) && isset($_POST['t
     $sentencia_agregar = null;
     $pdo = null;
 
-    echo '<script type="text/javascript">alert("TRACKING CODE SUCCESSFULLY REGISTERED");window.location.href="TrackingAdmin.php";</script>';
+    // echo '<script type="text/javascript">alert("TRACKING CODE SUCCESSFULLY REGISTERED");window.location.href="TrackingAdmin.php";</script>';
+    echo '<script type="text/javascript" defer>
+    var notifications = document.getElementById("notifications");
+    notifications.innerHTML = "*Tracking Code REGISTERED.";
+    notifications.style.margin = "10px";
+    notifications.style.textAlign = "center";
+    notifications.style.fontWeight = "bolder";
+    notifications.style.color = "green";
+    </script>';
   }
     // header('location:TrackingAdmin.php');
   }

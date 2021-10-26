@@ -42,6 +42,7 @@ if(isset($_SESSION['user'])){
                     <!-- <input style="visibility:hidden" type="file" name="track-img" class="subir-imagen" id="files"> -->
                     
                 </div>
+                <div id="notifications"></div>
                 <div class="button">
                     <input type="submit" value="Submit" class="btn-admin" >
                 </div>
