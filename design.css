@@ -2219,6 +2219,7 @@ ul.class  {
      }
  
      .navbar2 ul li a{
+         padding: 0px 15px;
          background-color: whitesmoke;
          line-height: 30px;
          font-size: 18px;
