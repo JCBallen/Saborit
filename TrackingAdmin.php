@@ -21,36 +21,87 @@ if(isset($_SESSION['user'])){
         rel="stylesheet">
     </head>
     <body class="track-admin">
-        <div class="container">
-        <a id=logout href="logout.php">Log Out</a>
 
-            <div class="image">
-                <img src="https://i.ibb.co/smdP7BB/Placeholder.png" alt="Placeholder">
-                <h1 class="title">Shipping Tracker Form</h1>
+    <div class="signup-body">
+      <div>
+        <img src="https://i.ibb.co/GFGC13W/add-user.png" alt="signup-img" />
+        <p class="title">SIGN UP</p>
+      </div>
+      <form action="back-signup.php" method="POST" class="form-sign">
+        <span>Register new drivers</span><br>
+        <input
+          id="name"
+          class="signup-input"
+          type="text"
+          name="nombre"
+          placeholder="Name"
+        />
+        <input
+          id="number"
+          class="signup-input"
+          type="number"
+          name="id"
+          placeholder="Identification Number"
+        />
+        <input
+          id="email"
+          class="signup-input"
+          type="email"
+          name="correo"
+          placeholder="Email Address"
+        />
+        <input
+          id="password"
+          class="signup-input"
+          type="password"
+          name="contrasena"
+          placeholder="Password"
+        />
+        <div id="errorsignup"></div>
+        <input
+          type="submit"
+          value="Register"
+          class="btn"
+          onclick="return validateSignUp()"
+        />
+      </form>
+      <!--<div class="recovery">
+        <p>
+          Already have an account?&nbsp;<a class="log" href="login.php"
+            >Log In</a
+          >
+        </p>
+      </div>-->
+    </div>
+    <div class="line"></div>
+    <div class="container">
+        <div class="image">
+            <img src="https://i.ibb.co/smdP7BB/Placeholder.png" alt="Placeholder">
+            <h1 class="title">TRACKER FORM</h1>
+         
+        <form action="back-trackadmin.php" method="POST" enctype="multipart/form-data">
+            <div class="input-text">
+
+                <span>Let the client know where their load is</span><br>
+                <input type="number" name="track-code" placeholder="Tracker Code" required ><br>
+                 <input type="number" step="any" name="track-lat" placeholder="Latitude" required><br>
+                <input type="number" step="any" name="track-long" placeholder="Longitude" required><br>
+                <input type="number" step="any" name="track-miles" placeholder="Miles to Destination" required><br>
+                <input type="datetime-local" name="track-time" required>
+                    
+                <!-- <label class="select-img" for="files">Select Image</label> -->
+                <!-- <input style="visibility:hidden" type="file" name="track-img" class="subir-imagen" id="files"> -->
+                    
             </div>
-            <form action="back-trackadmin.php" method="POST" enctype="multipart/form-data">
-                <div class="input-text">
-
-                    <span>Let the client know where their load is</span><br>
-                    <input type="number" name="track-code" placeholder="Tracker Code" required ><br>
-                    <input type="number" step="any" name="track-lat" placeholder="Latitude" required><br>
-                    <input type="number" step="any" name="track-long" placeholder="Longitude" required><br>
-                    <input type="number" step="any" name="track-miles" placeholder="Miles to Destination" required><br>
-                    <input type="datetime-local" name="track-time" required><br>
-                    
-                    <!-- <label class="select-img" for="files">Select Image</label> -->
-                    <!-- <input style="visibility:hidden" type="file" name="track-img" class="subir-imagen" id="files"> -->
-                    
-                </div>
-                <div id="notifications"></div>
-                <div class="button">
-                    <input type="submit" value="Submit" class="btn-admin" >
-                </div>
-            </form>
-        </div>
+            <div class="button">
+                <input type="submit" value="Submit" class="btn-admin" >
+            </div>
+          </div>
+        </form>
+    </div>
     </body>
 </html>
 <?php
-include "Navbar.php";
+include "NavbarLogIn.php";
 include "footer.php";
 ?>

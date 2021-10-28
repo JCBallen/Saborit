@@ -14,11 +14,10 @@
 <body>
     <header>
             <div class="navbar1">
-                 <ul>
-                    <li><b> For company drivers </b></li>
-                    <!--<li><a href="signup.php">Register</a></li>-->
-                    <li><a href="login.php">Log In</a></li>
-                </ul>
+                <div class="nav1-container">
+                 <p>Hello Julie!<!--<?php echo $_SESSION['user']; ?>--></p>
+                 <img src="https://i.ibb.co/0CYFYP6/Driver.png" alt="Driver">
+                 <a id=logout href="logout.php">Log Out</a></div>
             </div>
             <nav class="navbar2">
                 <a href="index.php"><img class="logo" src="https://i.ibb.co/1G4Zj02/Recurso-17.png" alt="logo"></a>

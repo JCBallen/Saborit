@@ -622,15 +622,20 @@ body.track-admin{
 }
 
 .container{
-  margin:0;
-  padding:0;
+  /*margin:0;
+  padding:0;*/
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 180px auto 150px auto;
   box-sizing: border-box;
   justify-content: space-around;
+}
+
+body.track-admin{
+  display: flex;
+  justify-content: space-around;
+  margin: auto 180px;
 }
 
 body.track-admin a#logout{
@@ -652,7 +657,15 @@ body.track-admin a#logout{
 }
 .image img{
 margin: auto;
-  /* width: auto;           aprox 15em */
+margin-bottom: 10px;
+width: 5em;
+}
+
+.line{
+  margin:auto 0px;
+  width: 5px;
+  height: 600px;
+  border-right: 3px solid #feab13;
 }
 
 .container h1{
@@ -665,16 +678,17 @@ margin: auto;
   display: flex;
   flex-direction: column;
   text-align: center;
-  margin: 9px 0 9px 0;
-  
+  padding-top: 15px;
 }
 
 .input-text input {
+  margin: auto;
+  font-size: medium;
   padding: 10px;
-  width: 100%;
+  width: 237px;
   outline: none;
-  border-radius: 12px;
-  border: 1px solid rgba(170, 168, 168, 1);
+  border-radius: 10px;
+  border: 1px solid #c8c8c8;
   padding-left: 15px;
   border-bottom-width: 2px;
 }
@@ -692,12 +706,15 @@ form .button {
 
 form .button input {
   padding: 10px 30px;
-  color: rgba(11, 19, 96, 1); 
-  font-weight: 900;
+  color: #0b1360; 
+  font-size: 15px;
+  font-weight: bold;
   background: #219EBC;
-  border: px solid rgba(170, 168, 168, 1);
+  border: 1px solid #418ba2;
   border-radius: 10px;
+  transition: 0.2s;
 }
+
 .select-img[for="files"]{
   background-color: #219EBC;
   border-radius: 10px;
@@ -719,15 +736,63 @@ form .button input {
   background-color: #0077b6;
 }
 
-@media (max-width: 425px) {
-  .container{
-   
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      margin: 180px auto 50px auto;
+@media (max-width: 1024px){
+  body.track-admin{
+    margin:auto;
   }
+}
+
+@media (max-width: 768px){
+  
+  body.track-admin{
+    margin: auto;
+    justify-content: center;
+  }
+
+  .container{
+    margin-left: 40px;
+  }
+
+  .container h1{
+    margin: auto;
+    font-size: 30px;
+  }
+
+  .container .input-text {
+    margin: auto;
+    width: 200px;
+  }
+
+  .container .input-text input{
+    width: 200px;
+  }
+
+  .image img{
+    width: 3em;
+  }
+  
+}
+@media (max-width: 635px){
+  body.track-admin{
+    display: block;
+    margin: 125px 0px;
+  }
+  .line{
+    border-top: 3px solid #feab13;
+    width: 100%;
+    height: 5px;
+    border-right: none;
+    margin: 20px 0px;
+  }
+  .container{
+      display: block;
+      align-items: center;
+      margin-left: 0px;
+  }
+}
+
+@media (max-width: 425px) {
+  
   .title {
     font-size: 25px;
   }
@@ -739,7 +804,6 @@ form .button input {
   .input-text input[type="text"],
   .input-text input[type="file"],
   .input-text input[type="number"]{
-    width: 200px;
     font-size: 15px;
   }
   .btn-admin{
@@ -760,7 +824,8 @@ form .button input {
       flex-direction: column;
       align-items: center;
   }
-  .input-text{
+  .container .input-text{
+      width: 300px;
       display: flex;
       align-items: center;
   }
@@ -804,7 +869,8 @@ body.su-body {
 }
 
 div.signup-body {
-  margin: 17vh auto;
+  margin: 17vh 0px;
+  width: 324.42px;
 }
 
 a.log {
@@ -814,7 +880,7 @@ a.log {
 }
 
 form.form-sign {
-  padding: 30px 0px 0px 0px;
+  padding-top: 15px;
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -827,7 +893,7 @@ input.signup-input {
   margin: 10px;
   border-radius: 10px;
   border-bottom-width: 2px;
-  width: 30%;
+  width: 237px;
 }
 
 input.signup-input:focus {
@@ -895,7 +961,7 @@ div.recovery {
   }
 
   input.signup-input{
-    width: 150px;
+    width: 200px;
     font-size: 15px;
   }
 
@@ -907,6 +973,24 @@ div.recovery {
   body.track-admin a#logout{
     /* margin-top: 0px; */
     margin: 0px auto 40px;
+  }
+
+  div.signup-body {
+    margin: 17vh 0px;
+    margin-right: 40px;
+    width: 266.81px;
+  }
+}
+
+@media (max-width: 635px){
+  div.signup-body{
+    margin: auto;
+  }
+}
+
+@media(max-width: 425px){
+  img[alt="signup-img"] {
+    display: none;
   }
 }
 
@@ -998,7 +1082,7 @@ input.btn-rm {
 p.title {
   display: flex;
   justify-content: center;
-  color: #0078b8;
+  color: #023E8A;
   margin: 0px;
   font-size: 40px;
   font-style: italic;
@@ -1030,7 +1114,7 @@ a.forgot {
 
 @media (max-width: 768px) {
   p.title {
-    font-size: 27px;
+    font-size: 35px;
   }
   .recovery p {
     font-size: 0.6em;
@@ -1039,7 +1123,7 @@ a.forgot {
 
   input[type="password"],
   input[type="email"] {
-    width: 150px;
+    width: 200px;
     font-size: 15px;
   }
 
@@ -1605,12 +1689,43 @@ input.btn {
 
 /*Navbar*/
 
-.navbar1 {
-    display: flex;
-    justify-content: right;
-    background-color: rgba(11, 18, 96, 1);
- }
- 
+ .navbar1 {
+  display: flex;
+  justify-content: right;
+  background-color: rgba(11, 18, 96, 1);
+  padding: 5px 0px;
+}
+
+.navbar1 p{
+   color:white;
+   padding: 10px;
+   border-right: 2px solid white;
+   height: 20px;
+   padding: 0px 10px;
+}
+
+.navbar1 img{
+   width: 20px;
+   height: 20px;
+   margin: 0px 20px 0px 10px;
+}
+
+.nav1-container{
+   display: inline-flex;
+   margin-right: 80px;
+}
+
+.navbar1 a#logout{
+   border: 1px solid white;
+   align-self: flex-end;
+   text-decoration: none;
+   color: white;
+   background-color:#023E8A;
+   padding: 0px 15px;
+   border-radius: 5px;
+   z-index: 100;
+}
+
  .navbar1 ul {
      margin-right: 60px;
      padding: 10px;
@@ -1656,11 +1771,11 @@ input.btn {
  }
  
  .navbar2 ul li a{
+     cursor: pointer;
      color:black;
      line-height: 80px;
      font-size: 18px;
      padding: 30px 15px;
-     cursor: pointer;
  }
  
  .navbar2 ul ul {
@@ -1712,7 +1827,7 @@ input.btn {
  }
  
  .navbar2 .point:hover{
-    position: absolute;
+   position: absolute;
      margin: 0 auto;
      top: 15px;
      opacity: 100%;
@@ -2007,7 +2122,7 @@ input[type="radio"]:checked + label::after {
     opacity: 0.5;
 }
 
-div.drivers a#logout{
+/*div.drivers a#logout{
   align-self: flex-end;
   text-decoration: none;
   color: white;
@@ -2018,7 +2133,7 @@ div.drivers a#logout{
   padding: 5px 15px;
   border-radius: 5px;
   z-index: 100;
-}
+}*/
 
 .drivers h1 {
     z-index: 1;
@@ -2153,6 +2268,10 @@ ul.class  {
      .navbar1 ul{
          margin-right: 25px;
      }
+
+     .nav1-container{
+      margin-right: 50px;
+     }
  
      .navbar2 .logo{
          margin-left: 30px;
@@ -2189,6 +2308,10 @@ ul.class  {
 
     /*Navbar*/
  
+    .nav1-container{
+      margin-right: 30px;
+    }
+
      .navbar1 ul{
          margin-right: 10px;
      }
@@ -2379,9 +2502,9 @@ ul.class  {
         font-size: 20px;
     }
 
-    a#logout{
+    /*a#logout{
       margin-top:100px;
-    }
+    }*/
 
     /*Footer*/
 
@@ -2503,9 +2626,9 @@ ul.class  {
         
     } 
     
-    a#logout{
+    /*a#logout{
       margin-top:100px;
-    }
+    }*/
 
      /*Footer*/
 
