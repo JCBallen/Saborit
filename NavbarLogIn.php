@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Home | Saborit Express</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!--<link rel="stylesheet" href="stylenav.css">-->
     <link rel="stylesheet" href="design.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
@@ -15,7 +14,7 @@
     <header>
             <div class="navbar1">
                 <div class="nav1-container">
-                 <p>Hello Julie!<!--<?php echo $_SESSION['user']; ?>--></p>
+                 <p>Hello Xavier!<!--Sabrosit if you read it but in english:v<?php echo $_SESSION['user']; ?>--></p>
                  <img src="https://i.ibb.co/0CYFYP6/Driver.png" alt="Driver">
                  <a id=logout href="logout.php">Log Out</a></div>
             </div>

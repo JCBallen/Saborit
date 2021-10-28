@@ -22,7 +22,7 @@ if(isset($_SESSION['user'])){
 <body>
     <div class="drivers">
         <!--<a id=logout href="logout.php">Log Out</a>-->
-        <h1 class="title">WELCOME <?php echo $_SESSION['user']; ?> </h1>
+        <h1 class="title">WELCOME AGAIN <?php echo $_SESSION['user']; ?> </h1>
         <div class="drivers-container">
             <div class="card-1">
                 <h3 class="pretitle">FLEET STATUS</h3>
