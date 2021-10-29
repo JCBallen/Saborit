@@ -2160,7 +2160,7 @@ input[type="radio"]:checked + label::after {
     display: flex;
     text-align: center;
     justify-content: space-between;
-    z-index: 5;
+    z-index: 1;
 }
 
 .drivers-container .card-1, .card-2{
