@@ -1688,12 +1688,17 @@ input.btn {
 
 
 /*Navbar*/
+.nav1{
+  display: flex;
+  justify-content: right;
+  background-color: rgba(11, 18, 96, 1);
+  padding: 5px 0px;
+}
 
  .navbar1 {
   display: flex;
   justify-content: right;
   background-color: rgba(11, 18, 96, 1);
-  padding: 5px 0px;
 }
 
 .navbar1 p{
@@ -1704,7 +1709,7 @@ input.btn {
    padding: 0px 10px;
 }
 
-.navbar1 img{
+.nav1 img{
    width: 20px;
    height: 20px;
    margin: 0px 20px 0px 10px;
@@ -1715,7 +1720,7 @@ input.btn {
    margin-right: 80px;
 }
 
-.navbar1 a#logout{
+.nav1 a#logout{
    border: 1px solid white;
    align-self: flex-end;
    text-decoration: none;

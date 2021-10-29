@@ -12,7 +12,7 @@
 
 <body>
     <header>
-            <div class="navbar1">
+            <div class="nav1">
                 <div class="nav1-container">
                  <p>Hello Xavier!<!--Sabrosit if you read it but in english:v<?php echo $_SESSION['user']; ?>--></p>
                  <img src="https://i.ibb.co/0CYFYP6/Driver.png" alt="Driver">
