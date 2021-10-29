@@ -632,13 +632,13 @@ body.track-admin{
   justify-content: space-around;
 }
 
-body.track-admin{
+.track-admin{
   display: flex;
   justify-content: space-around;
   margin: auto 180px;
 }
 
-body.track-admin a#logout{
+.track-admin a#logout{
   align-self: flex-end;
   text-decoration: none;
   color: white;
@@ -737,14 +737,14 @@ form .button input {
 }
 
 @media (max-width: 1024px){
-  body.track-admin{
+  .track-admin{
     margin:auto;
   }
 }
 
 @media (max-width: 768px){
   
-  body.track-admin{
+  .track-admin{
     margin: auto;
     justify-content: center;
   }
@@ -773,7 +773,7 @@ form .button input {
   
 }
 @media (max-width: 635px){
-  body.track-admin{
+  .track-admin{
     display: block;
     margin: 125px 0px;
   }

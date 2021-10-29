@@ -20,8 +20,8 @@ if(isset($_SESSION['user'])){
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
         rel="stylesheet">
     </head>
-    <body class="track-admin">
-
+    <body>
+    <div class="track-admin">
     <div class="signup-body">
       <div>
         <img src="https://i.ibb.co/GFGC13W/add-user.png" alt="signup-img" />
@@ -98,6 +98,7 @@ if(isset($_SESSION['user'])){
             </div>
           </div>
         </form>
+    </div>
     </div>
     </body>
 </html>
