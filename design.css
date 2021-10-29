@@ -2131,7 +2131,7 @@ input[type="radio"]:checked + label::after {
     z-index: -1;
 }
 
-/*div.drivers a#logout{
+div.drivers a#logout{
   align-self: flex-end;
   text-decoration: none;
   color: white;
@@ -2142,7 +2142,7 @@ input[type="radio"]:checked + label::after {
   padding: 5px 15px;
   border-radius: 5px;
   z-index: 100;
-}*/
+}
 
 .drivers h1 {
     /* z-index: 1; */
@@ -2153,8 +2153,6 @@ input[type="radio"]:checked + label::after {
 .pretitle {
     color: #FFAA01;
 }
-
-
 
 .drivers-container {
     display: flex;
