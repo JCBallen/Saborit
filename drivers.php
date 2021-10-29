@@ -19,7 +19,7 @@ if(isset($_SESSION['user'])){
     <!--<link rel="stylesheet" href="styledrivers.css">-->
     <link rel="stylesheet" href="design.css">
 </head>
-<body>
+<body class="drivers-bd">
     <div class="drivers">
         <!--<a id=logout href="logout.php">Log Out</a>-->
         <h1 class="title">WELCOME AGAIN <?php echo $_SESSION['user']; ?> </h1>

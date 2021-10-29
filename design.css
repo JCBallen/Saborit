@@ -1689,6 +1689,7 @@ input.btn {
 
 /*Navbar*/
 
+
 .nav1{
   display: flex;
   justify-content: right;
@@ -2117,6 +2118,7 @@ input[type="radio"]:checked + label::after {
     background-size: cover;
     background-attachment: fixed;
     position: relative;
+    z-index: -2;
 }
 
 .drivers:before{
@@ -2126,6 +2128,7 @@ input[type="radio"]:checked + label::after {
     background-color: white;
     position: absolute;
     opacity: 0.5;
+    z-index: -1;
 }
 
 /*div.drivers a#logout{
@@ -2142,7 +2145,7 @@ input[type="radio"]:checked + label::after {
 }*/
 
 .drivers h1 {
-    z-index: 1;
+    /* z-index: 1; */
     text-shadow: 2px 2px 5px white;
     text-transform: uppercase;
 }
@@ -2151,15 +2154,15 @@ input[type="radio"]:checked + label::after {
     color: #FFAA01;
 }
 
-.drivers .title .drivers-container {
+/* .drivers .title .drivers-container {
     z-index: 1;
-}
+} */
 
 .drivers-container {
     display: flex;
     text-align: center;
     justify-content: space-between;
-    z-index: 1;
+    /* z-index: 1; */
 }
 
 .drivers-container .card-1, .card-2{
