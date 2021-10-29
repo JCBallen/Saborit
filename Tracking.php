@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
@@ -138,6 +141,10 @@
 </html>
 
 <?php
-include "Navbar.php";
+if(isset($_SESSION['user'])){
+  include "NavbarLogIn.php";
+}else{
+  include "Navbar.php";
+}
 include "footer.php";
 ?>

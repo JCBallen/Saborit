@@ -103,6 +103,10 @@ if(isset($_SESSION['user'])){
     </body>
 </html>
 <?php
-include "NavbarLogIn.php";
+if(isset($_SESSION['user'])){
+  include "NavbarLogIn.php";
+}else{
+  include "Navbar.php";
+}
 include "footer.php";
 ?>
