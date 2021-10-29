@@ -2118,7 +2118,6 @@ input[type="radio"]:checked + label::after {
     background-size: cover;
     background-attachment: fixed;
     position: relative;
-    z-index: -2;
 }
 
 .drivers:before{
@@ -2128,24 +2127,10 @@ input[type="radio"]:checked + label::after {
     background-color: white;
     position: absolute;
     opacity: 0.5;
-    z-index: -1;
-}
-
-div.drivers a#logout{
-  align-self: flex-end;
-  text-decoration: none;
-  color: white;
-  font-size: 1.2em;
-  background-color:#023E8A;
-  margin-right: 20px;
-  margin-bottom: 50px;
-  padding: 5px 15px;
-  border-radius: 5px;
-  z-index: 100;
 }
 
 .drivers h1 {
-    /* z-index: 1; */
+    z-index: 1; 
     text-shadow: 2px 2px 5px white;
     text-transform: uppercase;
 }
