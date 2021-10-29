@@ -1,7 +1,7 @@
 <?php
 
 include_once 'conexion.php';
-include 'signup.php';
+include 'TrackingAdmin.php';
 
 
 if( preg_match('/^[a-zA-ZáéíóúñÁÉÍÓÚÑ ]+$/', $_POST['nombre']) &&
@@ -40,7 +40,7 @@ preg_match('/^[0-9a-zA-Z]+$/', $_POST['contrasena']) ){
       $sentencia_agregar = null;
       $pdo = null;
 
-      header('location:signup.php');
+      header('location:TrackingAdmin.php');
       }
     
   }

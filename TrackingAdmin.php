@@ -20,7 +20,7 @@ if(isset($_SESSION['user'])){
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
         rel="stylesheet">
     </head>
-    <body class="ta-body">
+  <body class="ta-body">
     <div class="track-admin">
     <div class="signup-body">
       <div>
@@ -35,6 +35,7 @@ if(isset($_SESSION['user'])){
           type="text"
           name="nombre"
           placeholder="Name"
+          required
         />
         <input
           id="number"
@@ -42,6 +43,7 @@ if(isset($_SESSION['user'])){
           type="number"
           name="id"
           placeholder="Identification Number"
+          required
         />
         <input
           id="email"
@@ -49,6 +51,7 @@ if(isset($_SESSION['user'])){
           type="email"
           name="correo"
           placeholder="Email Address"
+          required
         />
         <input
           id="password"
@@ -56,6 +59,7 @@ if(isset($_SESSION['user'])){
           type="password"
           name="contrasena"
           placeholder="Password"
+          required
         />
         <div id="errorsignup"></div>
         <input
@@ -63,6 +67,7 @@ if(isset($_SESSION['user'])){
           value="Register"
           class="btn"
           onclick="return validateSignUp()"
+          required
         />
       </form>
       <!--<div class="recovery">
@@ -78,29 +83,30 @@ if(isset($_SESSION['user'])){
         <div class="image">
             <img src="https://i.ibb.co/smdP7BB/Placeholder.png" alt="Placeholder">
             <h1 class="title">TRACKER FORM</h1>
-         
-        <form action="back-trackadmin.php" method="POST" enctype="multipart/form-data">
+            
+            <form action="back-trackadmin.php" method="POST" enctype="multipart/form-data">
             <div class="input-text">
-
-                <span>Let the client know where their load is</span><br>
-                <input type="number" name="track-code" placeholder="Tracker Code" required ><br>
-                 <input type="number" step="any" name="track-lat" placeholder="Latitude" required><br>
-                <input type="number" step="any" name="track-long" placeholder="Longitude" required><br>
+              
+              <span>Let the client know where their load is</span><br>
+              <input type="number" name="track-code" placeholder="Tracker Code" required ><br>
+              <input type="number" step="any" name="track-lat" placeholder="Latitude" required><br>
+              <input type="number" step="any" name="track-long" placeholder="Longitude" required><br>
                 <input type="number" step="any" name="track-miles" placeholder="Miles to Destination" required><br>
                 <input type="datetime-local" name="track-time" required>
-                    
+                
                 <!-- <label class="select-img" for="files">Select Image</label> -->
                 <!-- <input style="visibility:hidden" type="file" name="track-img" class="subir-imagen" id="files"> -->
-                    
-            </div>
-            <div class="button">
+                
+              </div>
+              <div id="notifications"></div>
+              <div class="button">
                 <input type="submit" value="Submit" class="btn-admin" >
-            </div>
+              </div>
+            </form>
           </div>
-        </form>
     </div>
     </div>
-    </body>
+  </body>
 </html>
 <?php
 if(isset($_SESSION['user'])){

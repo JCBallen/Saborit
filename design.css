@@ -2154,15 +2154,13 @@ input[type="radio"]:checked + label::after {
     color: #FFAA01;
 }
 
-/* .drivers .title .drivers-container {
-    z-index: 1;
-} */
+
 
 .drivers-container {
     display: flex;
     text-align: center;
     justify-content: space-between;
-    /* z-index: 1; */
+    z-index: 5;
 }
 
 .drivers-container .card-1, .card-2{
