@@ -617,7 +617,7 @@ textarea:active{
 
 /*-----------------------Formulario administrador---------*/
 
-body.track-admin{
+.track-admin{
   background-color: #D5D5D5;
 }
 
