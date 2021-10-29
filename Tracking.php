@@ -65,7 +65,13 @@ session_start();
           $sentencia=$pdo->prepare($sql);
           $sentencia->execute();
           $resultado = $sentencia->fetch();
+            if($resultado==false){
+            echo '<script>
+                    document.getElementById("errortrack").style.display = "block";
+                    </script>';
+                  }
           }
+            
          
           // $resultadoFinal=array("logitud"=>utf8_encode($resultado['lt']),"latitud"=>utf8_encode($resultado['lg']));
           // var_dump($resultado);
