@@ -40,7 +40,14 @@ preg_match('/^[0-9a-zA-Z]+$/', $_POST['contrasena']) ){
       $sentencia_agregar = null;
       $pdo = null;
 
-      header('location:TrackingAdmin.php');
+      echo '<script type="text/javascript" defer>
+      var errorSignUp = document.getElementById("errorsignup");
+      errorSignUp.innerHTML = "*Email Successfully Registered.";
+      errorSignUp.style.margin = "10px";
+      errorSignUp.style.color = "green";
+      </script>';
+
+      // header('location:TrackingAdmin.php');
       }
     
   }
