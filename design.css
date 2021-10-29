@@ -617,7 +617,7 @@ textarea:active{
 
 /*-----------------------Formulario administrador---------*/
 
-.track-admin{
+body.ta-body{
   background-color: #D5D5D5;
 }
 
@@ -1688,11 +1688,12 @@ input.btn {
 
 
 /*Navbar*/
+
 .nav1{
   display: flex;
   justify-content: right;
   background-color: rgba(11, 18, 96, 1);
-  padding: 5px 0px;
+  padding: 10px 0px;
 }
 
  .navbar1 {
@@ -1701,7 +1702,7 @@ input.btn {
   background-color: rgba(11, 18, 96, 1);
 }
 
-.navbar1 p{
+.nav1 p{
    color:white;
    padding: 10px;
    border-right: 2px solid white;

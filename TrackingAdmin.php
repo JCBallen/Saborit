@@ -20,7 +20,7 @@ if(isset($_SESSION['user'])){
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
         rel="stylesheet">
     </head>
-    <body>
+    <body class="ta-body">
     <div class="track-admin">
     <div class="signup-body">
       <div>
