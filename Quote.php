@@ -9,6 +9,7 @@ session_start();
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Get a Quote | Saborit Express</title>
     <!--<link rel="stylesheet" href="stylequote.css">-->
+    <link rel="shortcut icon" href="https://i.ibb.co/1G4Zj02/Recurso-17.png" type="image/x-icon">
     <link rel="stylesheet" href="design.css" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
      rel="stylesheet">

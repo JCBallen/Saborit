@@ -8,6 +8,7 @@ session_start();
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Tracking | Saborit Express</title>
+    <link rel="shortcut icon" href="https://i.ibb.co/1G4Zj02/Recurso-17.png" type="image/x-icon">
     <link rel="stylesheet" href="design.css" />
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"

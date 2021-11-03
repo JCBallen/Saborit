@@ -17,6 +17,7 @@ if(isset($_SESSION['user'])){
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Drivers | Saborit Express</title>
     <!--<link rel="stylesheet" href="styledrivers.css">-->
+    <link rel="shortcut icon" href="https://i.ibb.co/1G4Zj02/Recurso-17.png" type="image/x-icon">
     <link rel="stylesheet" href="design.css">
 </head>
 <body class="drivers-bd">
