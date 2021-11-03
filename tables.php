@@ -47,6 +47,7 @@ $resultado2 = $sentencia->fetchAll();
           <th>Delete</th>
         </thead>
         <?php foreach($resultado as $key => $value) :?>
+          <?php if($value["correo"]!="jalei.saboritexpress@gmail.com"): ?>
         <tr>
           <td><?php echo $value["nombre"]; ?></td>
           <td><?php echo $value["identificacion"]; ?></td>
@@ -59,6 +60,7 @@ $resultado2 = $sentencia->fetchAll();
             </form>
           </td>
         </tr>
+        <?php endif ?>
         <?php endforeach ?>
       </table>
 </div>
