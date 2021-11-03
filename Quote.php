@@ -20,11 +20,11 @@ session_start();
             <form id="formq" name="formq" class="form-quote" action="" method="">
                 <div class="type-details">
                     
-                    <h4>Type of Chargo</h4>
+                    <h4>Type of Cargo</h4>
                     <div class="choose">
-                        <input type="radio" name="typeofchargo" id="ltl">
+                        <input type="radio" name="typeofcargo" id="ltl">
                         <label for="ltl">Less than Truckload</label>
-                        <input type="radio" name="typeofchargo" id="tl">
+                        <input type="radio" name="typeofcargo" id="tl">
                         <label for="tl">Full Truckload</label>
                     </div>
 
@@ -82,7 +82,7 @@ session_start();
                         <li><b>Destination:   </b><span id="delivery"></span></li>
                         <li><b>Distance in Miles:   </b><span id="miles"></span></li>
                         <li><b>Duration:   </b><span id="duration"></span></li>
-                        <li><b>Type of Chargo:   </b><span id="chargo"></span></li>
+                        <li><b>Type of Cargo:   </b><span id="chargo"></span></li>
                         <li><b>Type of Truck:   </b><span id="truck"></span></li>
                     </ul>
                 </div>
