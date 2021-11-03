@@ -7,7 +7,7 @@
     <title>Home | Saborit Express</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--<link rel="stylesheet" href="stylenav.css">-->
-    <link rel="shortcut icon" href="https://i.ibb.co/1G4Zj02/Recurso-17.png" type="image/x-icon">
+    <link rel="shortcut icon" href="https://i.ibb.co/0mVtLWn/logo-png.png" type="image/x-icon">
     <link rel="stylesheet" href="design.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
