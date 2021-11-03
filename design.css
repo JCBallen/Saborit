@@ -666,7 +666,7 @@ width: 5em;
 }
 
 .line{
-  margin:auto 0px;
+  margin: auto 0px;
   width: 5px;
   height: 600px;
   border-right: 3px solid #feab13;
@@ -728,6 +728,27 @@ form .button input {
   border: 1px solid #418ba2;
   border-radius: 10px;
   transition: 0.2s;
+}
+
+a#btn-admin-tables{
+  display: flex;
+  margin: -30px auto 30px;
+  width: min-content;
+  
+  text-decoration: none;
+  padding: 10px 30px;
+  color: #0b1360; 
+  font-size: 15px;
+  font-weight: bold;
+  background: #219EBC;
+  border: 1px solid #418ba2;
+  border-radius: 10px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+a#btn-admin-tables.active{
+  background-color: #0077b6;
 }
 
 .select-img[for="files"]{
@@ -885,7 +906,7 @@ body.su-body {
 
 div.signup-body {
   margin: 17vh 0px;
-  width: 324.42px;
+  width: 290px;
 }
 
 a.log {
@@ -1580,6 +1601,79 @@ input#b2:checked ~ ul.t2 {
     transition: all 0.4s;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* TABLAS */
+
+.tables-bd{
+  background-color: #D5D5D5;
+}
+
+div#tables-container{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  text-align: center;
+  padding-top: 130px;
+  padding-bottom: 120px;
+
+}
+
+.tb-titles{
+  padding: 30px;
+  margin: auto;
+}
+
+td,th{
+  padding:20px;
+}
+
+#sub-tb{
+  all: unset;
+  color: red;
+  cursor: pointer;
+}
+
+#sub-tb:active{
+ color: darkred;
+}
+
+#table-1,#table-2{
+  outline: solid #0B1360;
+  max-width: 40%;
+  margin: auto;
+  background-color: white;
+  border-radius: 10px;
+}
+
+/* #tb-1,#tb-2{
+  overflow: scroll;
+} */
+
+
+@media (max-width:1500px) {
+  div#tables-container{
+    display: block;
+  }
+}
+
 
 
 

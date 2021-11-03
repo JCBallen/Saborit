@@ -2,7 +2,7 @@
 
 #VALIDA SI EXISTE UNA SESIÓN ACTIVA
 session_start();
-if(isset($_SESSION['user'])){
+if(($_SESSION['user'])=="admin"){
 }else{
     header('location:index.php');
 }
@@ -112,6 +112,7 @@ if(isset($_SESSION['user'])){
           </div>
     </div>
     </div>
+    <a id="btn-admin-tables" href="tables.php">Tables</a>
   </body>
 </html>
 <?php
