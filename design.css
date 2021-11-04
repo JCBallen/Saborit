@@ -2447,6 +2447,7 @@ ul.class  {
          background-color: whitesmoke;
          line-height: 30px;
          font-size: 18px;
+         width: 100%;
      }
  
      .navbar2 ul li a:hover{
