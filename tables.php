@@ -43,11 +43,11 @@ $resultado2 = $sentencia->fetchAll();
           <th>Name</th>
           <th>ID</th>
           <th>Email</th>
-          <th>Registration Day</th>
+          <th>Registration Date</th>
           <th>Delete</th>
         </thead>
         <?php foreach($resultado as $key => $value) :?>
-          <?php if($value["correo"]!="jalei.saboritexpress@gmail.com"): ?>
+          <?php if($value["correo"]!="saboritexpress@gmail.com"): ?>
         <tr>
           <td><?php echo $value["nombre"]; ?></td>
           <td><?php echo $value["identificacion"]; ?></td>
@@ -69,7 +69,7 @@ $resultado2 = $sentencia->fetchAll();
       <h1 class="tb-titles">TRACKING CODES</h1>
       <table id="table-2">
         <thead>
-          <th>Codes</th>
+          <th>Code</th>
           <th>Latitue</th>
           <th>Longitude</th>
           <th>Milles</th>

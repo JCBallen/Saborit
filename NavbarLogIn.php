@@ -15,7 +15,7 @@
     <header>
             <div class="nav1">
                 <div class="nav1-container">
-                    <a href="<?php if($_SESSION['user']=="admin"){echo 'TrackingAdmin.php';}else{echo 'drivers.php';} ?>">
+                 <a href="<?php if($_SESSION['user']=="admin"){echo 'TrackingAdmin.php';}else{echo 'drivers.php';} ?>">
                  <p>Hello <?php echo $_SESSION['user']; ?>!</p>
                  </a>
                  <img src="https://i.ibb.co/0CYFYP6/Driver.png" alt="Driver">
