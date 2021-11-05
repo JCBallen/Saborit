@@ -23,7 +23,7 @@ $resultado = $sentencia->fetch();
 #var_dump($resultado);
 
 #SI USUARIO ESTA EN BASE DE DATOS
-if($resultado['correo']=="jalei.saboritexpress@gmail.com"){
+if($resultado['correo']=="saboritexpress@gmail.com"){
   #SI LA CONTRASEÑA COINCIDE
   if(password_verify($contrasena_login,$resultado['contrasena'])){
     $_SESSION['user'] = $resultado['nombre'];
