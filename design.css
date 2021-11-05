@@ -943,7 +943,7 @@ input.signup-input:focus {
   font-weight: bold;
 }
 
-input.btn {
+button.btn {
   border: 1px solid #418ba2;
   padding: 10px 30px;
   margin: 10px;
@@ -1633,7 +1633,7 @@ div#tables-container{
   text-align: center;
   padding-top: 130px;
   padding-bottom: 120px;
-
+  justify-content: center;
 }
 
 .tb-titles{

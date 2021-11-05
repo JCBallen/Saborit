@@ -5,7 +5,7 @@ session_start();
 include_once 'conexion.php';
 include_once 'login.php';
 
-if(isset($_POST['log-correo'])){
+if(isset($_POST['log-correo']) && isset($_POST['log-contrasena'])){
 $usuario_login=$_POST['log-correo'];
 $contrasena_login=$_POST['log-contrasena'];
 
@@ -28,8 +28,14 @@ if($resultado['correo']=="saboritexpress@gmail.com"){
   if(password_verify($contrasena_login,$resultado['contrasena'])){
     $_SESSION['user'] = $resultado['nombre'];
     // header('location:TrackingAdmin.php');
-    echo '<script type="text/javascript">window.location.href="TrackingAdmin.php";</script>';
-    }
+    echo '<script type="text/javascript" defer>
+              var errorlogin = document.getElementById("errorlogin");
+              errorlogin.innerHTML = "*Successfully Login.";
+              errorlogin.style.margin = "10px";
+              errorlogin.style.color = "green";
+              window.location.href="TrackingAdmin.php";
+              </script>';
+  }
     else{
         // header('location:login.php');
         // echo '<script type="text/javascript">alert("WRONG EMAIL OR PASSWORD!");window.location.href="login.php";</script>';
@@ -49,8 +55,14 @@ else
       if(password_verify($contrasena_login,$resultado['contrasena'])){
         $_SESSION['user'] = $resultado['nombre'];
         // header('location:drivers.php');
-        echo '<script type="text/javascript">window.location.href="drivers.php";</script>';
-        }
+        echo '<script type="text/javascript" defer>
+              var errorlogin = document.getElementById("errorlogin");
+              errorlogin.innerHTML = "*Successfully Login.";
+              errorlogin.style.margin = "10px";
+              errorlogin.style.color = "green";
+              window.location.href="drivers.php";
+              </script>';
+      }
         else{
             // header('location:login.php');
             // echo '<script type="text/javascript">alert("WRONG EMAIL OR PASSWORD!");window.location.href="login.php";</script>';
