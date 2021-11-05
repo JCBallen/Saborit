@@ -2561,6 +2561,10 @@ ul.class  {
         width: 420px;
     }
 
+    input#code.input{
+      width: 300px;
+    }
+
     .track-container .information .milles {
         border-right: none;
         margin-bottom: 15px;
@@ -2576,7 +2580,6 @@ ul.class  {
 
     #map,.mapai{
       width: 486px;
-      height: 170px;
     }
     .mapa{
         width: 420px;
@@ -2632,11 +2635,12 @@ ul.class  {
 
  @media (max-width: 490px){
     #info{
-      width: 330px;
+      width: 300px;
     }
 
     #map,.mapai{
-      width: 330px;
+      width: 300px;
+      margin: auto;
     }
  }
  
