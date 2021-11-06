@@ -6,14 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="https://i.ibb.co/0mVtLWn/logo-png.png" type="image/x-icon">
     <link rel="stylesheet" href="design.css" />
-    <link
-    rel="stylesheet"
-    href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined"
-    />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
-    <script src='https://www.google.com/recaptcha/api.js?render=6Lc04RUdAAAAAJIM-gtUx7Ub5NStA_-_5OxOvzSx'></script>
-    <script defer src="appLogIn.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined" />
+    
+    <script src="https://www.google.com/recaptcha/api.js?render=6Lc04RUdAAAAAJIM-gtUx7Ub5NStA_-_5OxOvzSx"></script>
+    
+    <!-- <script defer src="appLogIn.js"></script> -->
+  
     <title>LogIn</title>
   </head>
   <body class="li-body">
@@ -22,7 +20,8 @@
         <img src="https://i.ibb.co/2PRtT9Q/usuario.png" alt="login-img" />
         <p class="title">LOG IN</p>
       </div>
-      <form action="back-login.php" method="POST" id="form-login" class="form-log">
+      <form action="back-recaptcha.php" method="POST" id="form-login" class="form-log">
+        <input type="hidden" name="g-token" id="google-t">
         <input
           id="email"
           class="log-input"
@@ -30,6 +29,7 @@
           name="log-correo"
           placeholder="Email Address"
           autofocus="autofocus"
+          required
         />
         <input
           id="password"
@@ -37,10 +37,8 @@
           type="password"
           name="log-contrasena"
           placeholder="Password"
+          required
         />
-
-        <input type="hidden" name="google-response-token" id="google-response-token">
-
 
         <div class="form-log-end">
           <input type="checkbox" id="btn-rm" />
@@ -51,11 +49,20 @@
         </div>
         <div id="errorlogin"></div>
         <div class="form-log">
-          <button type="button" class="btn" id="log-login" onclick="login()">Log In</button>
+          <input type="submit" class="btn" name="log-submit" id="log-login" value="Log In" onclick="return login()"/>
         </div>
       </form>
     </div>
     
+    <script>
+    grecaptcha.ready(function() {
+    grecaptcha.execute('6Lc04RUdAAAAAJIM-gtUx7Ub5NStA_-_5OxOvzSx', {action: 'homepage'}).then(function(token) {
+       document.getElementById("google-t").value = token;
+       console.log(token);
+    });
+    });
+    </script>
+
   </body>
   </html>
 <?php

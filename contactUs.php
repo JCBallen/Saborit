@@ -17,7 +17,7 @@ session_start();
     <h1 class="main-contact">contact us</h1>
 
     <!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScvapoZRC3gattm1Ex6I_vUPZIAPz4RfHlg2xPiPrEckMKTQw/viewform?embedded=true" width="100%" height="812" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe> -->
-    <form action="sendMail.php" method="POST" class="form-contact">
+    <form action="sendMail.php" method="POST" id="contact-form" class="form-contact" enctype="text/plain">
         <label class="contact-label" for="contact-name" id="a">Name</label><br>
         
         <input id="name" class="contact-input" type="text" name="contact-name" class="casilla" style="padding-left: 15px ;"><br><br>
@@ -33,10 +33,10 @@ session_start();
         
         
         <label class="contact-label" for="message">Message</label><br>
-        <textarea id="message" type="text" name="message" id="mensaje" class="casilla-textarea" style="padding: 15px" cols="30" rows="10"></textarea><br><br>
+        <textarea id="message" name="message" form="contact-form" class="casilla-textarea" style="padding: 15px" cols="30" rows="10"></textarea><br><br>
 
         <div id="errorcontact"></div>
-        <input type="submit" name="submit" value="Submit" class="btn-contact" onclick='return validateContactUs()'>
+        <input type="submit" name="submit" value="Submit" class="btn-contact">
     </form>
 </div>
 </div>
