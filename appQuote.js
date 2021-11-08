@@ -18,7 +18,7 @@ function showReefer(){
         document.getElementById('temperature').style.display = 'none';
     }
 
-    var btn1 = document.forms["formq"]["typeofchargo"];
+    var btn1 = document.forms["formq"]["typeofcargo"];
     var btn2 = document.forms["formq"]["typeoftruck"];
     var btn3 = document.forms["formq"]["continuity"];
     var pickup = document.getElementById('from');
