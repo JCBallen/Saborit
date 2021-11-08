@@ -22,9 +22,9 @@ session_start();
                     
                     <h4>Type of Cargo</h4>
                     <div class="choose">
-                        <input type="radio" name="typeofchargo" id="ltl">
+                        <input type="radio" name="typeofcargo" id="ltl">
                         <label for="ltl">Less than Truckload</label>
-                        <input type="radio" name="typeofchargo" id="tl">
+                        <input type="radio" name="typeofcargo" id="tl">
                         <label for="tl">Full Truckload</label>
                     </div>
 
