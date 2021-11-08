@@ -1712,10 +1712,6 @@ td,th{
   font-family: 'Open Sans', sans-serif;
 }
 
-html, body {
-    height: 100%;
-}
-
 header{
     position: fixed;
     top:0px;
