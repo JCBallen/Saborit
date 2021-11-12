@@ -16,11 +16,11 @@
                  <ul>
                     <li><b> For company drivers </b></li>
                     <!--<li><a href="signup.php">Register</a></li>-->
-                    <li><a href="login.php">Log In</a></li>
+                    <li><a href="login">Log In</a></li>
                 </ul>
             </div>
             <nav class="navbar2">
-                <a href="index.php"><img class="logo" src="https://i.ibb.co/1G4Zj02/Recurso-17.png" alt="logo"></a>
+                <a href="index"><img class="logo" src="https://i.ibb.co/1G4Zj02/Recurso-17.png" alt="logo"></a>
                     <label for="btn" class="btn-menu">
                         <span class="material-icons">menu</span>
                     </label>
@@ -34,24 +34,24 @@
                             </div></a>
                             <input class="checkbox" type="checkbox" id="btn-1">
                             <ul class="submenu">
-                                <li><a href="ourtrucks.php">Our Trucks</a></li>
-                                <li><a href="typesofload.php">Types of Chargo</a></li>
+                                <li><a href="ourtrucks">Our Trucks</a></li>
+                                <li><a href="typesofload">Types of Chargo</a></li>
                             </ul>
                         </li>
                         <li>
-                            <a href="Tracking.php">Tracking
+                            <a href="Tracking">Tracking
                             <div class="point">
                                 <span class="material-icons" style="font-size: x-small;">fiber_manual_record</span>
                             </div></a>                           
                         </li>
                         <li>
-                            <a href="contactUs.php">Contact Us
+                            <a href="contactUs">Contact Us
                             <div class="point">
                                 <span class="material-icons" style="font-size: x-small;">fiber_manual_record</span>
                             </div></a>                           
                         </li>
                         <li>
-                            <a class="cta" href="Quote.php"><button>GET A QUOTE</button></a>
+                            <a class="cta" href="Quote"><button>GET A QUOTE</button></a>
                         </li>
                     </ul>         
             </nav>

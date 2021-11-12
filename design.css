@@ -1891,6 +1891,10 @@ input.btn {
      font-size: 18px;
      padding: 30px 15px;
  }
+
+ a.shipping div span, a.shipping div, a.shipping{
+   cursor: no-drop;
+ }
  
  .navbar2 ul ul {
      position: absolute;

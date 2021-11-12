@@ -118,9 +118,9 @@ if(isset($_SESSION['user'])){
           </div>
     </div>
     </div>
-    <a id="btn-admin-tables" href="tables.php">Tables</a>
+    <a id="btn-admin-tables" href="tables">Tables</a>
 <?php
 include "footer.php";
 ?>
-  </body>
+</body>
 </html>

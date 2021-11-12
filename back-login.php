@@ -33,7 +33,7 @@ if($resultado['correo']=="saboritexpress@gmail.com"){
               errorlogin.innerHTML = "*Successfully Login.";
               errorlogin.style.margin = "10px";
               errorlogin.style.color = "green";
-              window.location.href="TrackingAdmin.php";
+              window.location.href="TrackingAdmin";
               </script>';
   }
     else{
@@ -60,7 +60,7 @@ else
               errorlogin.innerHTML = "*Successfully Login.";
               errorlogin.style.margin = "10px";
               errorlogin.style.color = "green";
-              window.location.href="drivers.php";
+              window.location.href="drivers";
               </script>';
       }
         else{

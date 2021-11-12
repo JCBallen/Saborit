@@ -25,7 +25,7 @@ include "NavbarLogIn.php";
 ?>
 <body class="drivers-bd">
     <div class="drivers">
-        <!--<a id=logout href="logout.php">Log Out</a>-->
+        <!--<a id=logout href="logout">Log Out</a>-->
         <h1 class="title">WELCOME AGAIN <?php echo $_SESSION['user']; ?> </h1>
         <div class="drivers-container">
             <div class="card-1">

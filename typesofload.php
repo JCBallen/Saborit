@@ -47,8 +47,8 @@ if(isset($_SESSION['user'])){
         <img src="https://i.ibb.co/hRwpq46/mid.jpg" alt="mid" />
         <img src="https://i.ibb.co/7RQyv7J/full.jpg" alt="full" />
     </div>
-<?php
-include "footer.php";
-?>
+  <?php
+  include "footer.php";
+  ?>
   </body>
 </html>

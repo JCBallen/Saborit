@@ -18,5 +18,5 @@ if (ini_get("session.use_cookies")) {
 
 // Finalmente, destruir la sesión.
 session_destroy();
-echo '<script type="text/javascript">alert("SESSION ENDED!");window.location.href="index.php";</script>';
+echo '<script type="text/javascript">alert("SESSION ENDED!");window.location.href="index";</script>';
 // header('location:index.php');
