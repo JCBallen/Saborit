@@ -1,19 +1,17 @@
-<!DOCTYPE html>
-<html lang="en-US">
-
-<head>
-    <meta charset="UTF-8">
+<!-- <!DOCTYPE html>
+<html lang="en"> -->
+<!-- <head> -->
+    <!-- <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Home | Saborit Express</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!--<link rel="stylesheet" href="stylenav.css">-->
-    <link rel="shortcut icon" href="https://i.ibb.co/0mVtLWn/logo-png.png" type="image/x-icon">
-    <link rel="stylesheet" href="design.css">
+    <title>Home | Saborit Express</title> -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <!-- <link rel="stylesheet" href="stylenav.css">-->
+    <!-- <link rel="shortcut icon" href="https://i.ibb.co/0mVtLWn/logo-png.png" type="image/x-icon"> -->
+    <!-- <link rel="stylesheet" href="design.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
-
-<body class="nav">
-    <header>
+<body class="nav"> -->
+    <header class="nav">
             <div class="navbar1">
                  <ul>
                     <li><b> For company drivers </b></li>
@@ -30,7 +28,7 @@
                     <ul>
                         <li>
                             <label for="btn-1" class="btn-submenu">Shipping </label>
-                            <a href="#shipping" class="shipping">Shipping 
+                            <a class="shipping">Shipping 
                             <div class="point">
                                 <span class="material-icons" style="font-size: x-small;">fiber_manual_record</span>
                             </div></a>
@@ -58,6 +56,6 @@
                     </ul>         
             </nav>
     </header>
-</body>
+<!-- </body> -->
 
-</html>
+<!-- </html> -->

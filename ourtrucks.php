@@ -8,9 +8,17 @@ session_start();
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="https://i.ibb.co/0mVtLWn/logo-png.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="design.css" />
     <title>Our Trucks</title>
   </head>
+  <?php
+  if(isset($_SESSION['user'])){
+    include "NavbarLogIn.php";
+  }else{
+    include "Navbar.php";
+  }
+  ?>
   <body class="ot-body">
     <section class="main-ot">
       <div class="ot">
@@ -34,13 +42,8 @@ session_start();
       </div>
     </section>
     <!-- <div id="fondo"></div> -->
-  </body>
-</html>
 <?php
-if(isset($_SESSION['user'])){
-  include "NavbarLogIn.php";
-}else{
-  include "Navbar.php";
-}
 include "footer.php";
 ?>
+  </body>
+</html>

@@ -2,7 +2,7 @@
 session_start();
 ?>
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,10 +10,15 @@ session_start();
     <title>Get a Quote</title>
     <link rel="shortcut icon" href="https://i.ibb.co/0mVtLWn/logo-png.png" type="image/x-icon">
     <link rel="stylesheet" href="design.css" />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-     rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   </head>
-
+<?php
+  if(isset($_SESSION['user'])){
+    include "NavbarLogIn.php";
+}else{
+    include "Navbar.php";
+}
+?>
   <body class="quote-body">
             <div class="quote-container">
             <div class="title"><h1>GET A QUOTE</h1></div>
@@ -97,13 +102,8 @@ session_start();
         <!-- Include all compiled plugins (below), or include individual files as needed -->
         <script src="Scripts/jquery-3.1.1.min.js"></script>
         <script src="appQuote.js" type="text/javascript"></script>
-  </body>
-</html>
 <?php
-if(isset($_SESSION['user'])){
-    include "NavbarLogIn.php";
-}else{
-    include "Navbar.php";
-}
 include "footer.php";
 ?>
+  </body>
+</html>

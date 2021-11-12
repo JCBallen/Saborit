@@ -9,8 +9,16 @@ session_start();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
     <link rel="shortcut icon" href="https://i.ibb.co/1G4Zj02/Recurso-17.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="design.css">
 </head>
+<?php
+if(isset($_SESSION['user'])){
+    include "NavbarLogIn.php";
+}else{
+    include "Navbar.php";
+}
+?>
 <body>
     <div class="contact-container">
 <div class="caja-main">
@@ -41,13 +49,8 @@ session_start();
 </div>
 </div>
 <script src="appContactUs.js"></script>
-</body>
-</html>
 <?php
-if(isset($_SESSION['user'])){
-    include "NavbarLogIn.php";
-}else{
-    include "Navbar.php";
-}
     include "footer.php";
 ?>
+</body>
+</html>

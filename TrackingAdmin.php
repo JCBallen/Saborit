@@ -8,7 +8,6 @@ if(($_SESSION['user'])=="admin"){
 }
 
 ?>
-
 <!DOCTYPE html>
 <html lang="en-US">
     <head>
@@ -18,9 +17,15 @@ if(($_SESSION['user'])=="admin"){
         <title>Tracking | Saborit Express</title>
         <link rel="shortcut icon" href="https://i.ibb.co/0mVtLWn/logo-png.png" type="image/x-icon">
         <link rel="stylesheet" href="design.css">
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-        rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     </head>
+<?php
+if(isset($_SESSION['user'])){
+  include "NavbarLogIn.php";
+}else{
+  include "Navbar.php";
+}
+?>
   <body class="ta-body">
     <div class="track-admin">
     <div class="signup-body">
@@ -114,13 +119,8 @@ if(($_SESSION['user'])=="admin"){
     </div>
     </div>
     <a id="btn-admin-tables" href="tables.php">Tables</a>
-  </body>
-</html>
 <?php
-if(isset($_SESSION['user'])){
-  include "NavbarLogIn.php";
-}else{
-  include "Navbar.php";
-}
 include "footer.php";
 ?>
+  </body>
+</html>

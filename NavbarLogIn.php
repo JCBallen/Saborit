@@ -1,17 +1,14 @@
-<!DOCTYPE html>
-<html lang="en-US">
-
-<head>
+<!-- <!DOCTYPE html>
+<html lang="en-US"> -->
+<!-- <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Home | Saborit Express</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="https://i.ibb.co/0mVtLWn/logo-png.png" type="image/x-icon">
     <link rel="stylesheet" href="design.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-</head>
-
-<body>
+</head> 
+<body> -->
     <header>
             <div class="nav1">
                 <div class="nav1-container">
@@ -30,7 +27,7 @@
                     <ul>
                         <li>
                             <label for="btn-1" class="btn-submenu">Shipping </label>
-                            <a href="#shipping" class="shipping">Shipping 
+                            <a class="shipping">Shipping 
                             <div class="point">
                                 <span class="material-icons" style="font-size: x-small;">fiber_manual_record</span>
                             </div></a>
@@ -44,13 +41,13 @@
                             <a href="Tracking.php">Tracking
                             <div class="point">
                                 <span class="material-icons" style="font-size: x-small;">fiber_manual_record</span>
-                            </div></a>                           
+                            </div></a>
                         </li>
                         <li>
                             <a href="contactUs.php">Contact Us
                             <div class="point">
                                 <span class="material-icons" style="font-size: x-small;">fiber_manual_record</span>
-                            </div></a>                           
+                            </div></a>
                         </li>
                         <li>
                             <a class="cta" href="Quote.php"><button>GET A QUOTE</button></a>
@@ -58,6 +55,5 @@
                     </ul>         
             </nav>
     </header>
-</body>
-
-</html>
+<!-- </body> -->
+<!-- </html> -->

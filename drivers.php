@@ -8,9 +8,8 @@ if(isset($_SESSION['user'])){
 }
 
 ?>
-
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,8 +17,12 @@ if(isset($_SESSION['user'])){
     <title>Drivers | Saborit Express</title>
     <!--<link rel="stylesheet" href="styledrivers.css">-->
     <link rel="shortcut icon" href="https://i.ibb.co/0mVtLWn/logo-png.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="design.css">
 </head>
+<?php
+include "NavbarLogIn.php";
+?>
 <body class="drivers-bd">
     <div class="drivers">
         <!--<a id=logout href="logout.php">Log Out</a>-->
@@ -37,9 +40,8 @@ if(isset($_SESSION['user'])){
             </div>
         </div>
     </div>
-</body>
-</html>
 <?php
-include "NavbarLogIn.php";
 include "footer.php";
 ?>
+</body>
+</html>

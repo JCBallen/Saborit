@@ -19,7 +19,6 @@ $sentencia->execute();
 $resultado2 = $sentencia->fetchAll();
 
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -27,13 +26,18 @@ $resultado2 = $sentencia->fetchAll();
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="design.css" />
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script defer src="appTables.js" type="text/javascript"></script>
     <title>Tables</title>
   </head>
+  <?php
+if(isset($_SESSION['user'])){
+  include "NavbarLogIn.php";
+}else{
+  include "Navbar.php";
+}
+?>
   <body class="tables-bd">
     <div id="tables-container">
     <div id="tb-1">
@@ -96,13 +100,8 @@ $resultado2 = $sentencia->fetchAll();
       </table>
     </div>
     </div>
-  </body>
-</html>
 <?php
-if(isset($_SESSION['user'])){
-  include "NavbarLogIn.php";
-}else{
-  include "Navbar.php";
-}
 include "footer.php";
 ?>
+  </body>
+</html>

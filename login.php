@@ -1,19 +1,23 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="https://i.ibb.co/0mVtLWn/logo-png.png" type="image/x-icon">
+    <link rel="shortcut icon" href="https://i.ibb.co/0mVtLWn/logo-png.png" type="image/x-icon" />
     <link rel="stylesheet" href="design.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined" />
-    
-    <script src="https://www.google.com/recaptcha/api.js?render=6Lc04RUdAAAAAJIM-gtUx7Ub5NStA_-_5OxOvzSx"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+    <script defer src="https://www.google.com/recaptcha/api.js?render=6Lc04RUdAAAAAJIM-gtUx7Ub5NStA_-_5OxOvzSx"></script>
     
     <!-- <script defer src="appLogIn.js"></script> -->
   
     <title>LogIn</title>
   </head>
+  <?php
+  include "Navbar.php";
+  ?>
   <body class="li-body">
     <div class="login-body">
       <div>
@@ -63,9 +67,8 @@
     });
     </script>
 
-  </body>
-  </html>
 <?php
-include "Navbar.php";
 include "footer.php";
 ?>
+  </body>
+  </html>
