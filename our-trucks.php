@@ -24,7 +24,7 @@ session_start();
       <div class="ot">
         <h2>OUR TRUCKS</h2>
         <br>
-        <p>We have a variety of trucks that support loads up to x lb</p>
+        <p>We have a variety of trucks that support loads up to 45 000 lb</p>
         <p>
           <br>
           All our roads are <strong>Brand New</strong> equipement 2021 and 2022

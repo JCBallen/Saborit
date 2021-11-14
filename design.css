@@ -1287,9 +1287,8 @@ img[alt="im2"]:hover {
   transform: scale(1.4);
   z-index: 1;
   box-shadow: 0px 0px 20px 0px rgb(0, 0, 0);
-  /* margin: 20vh -28vw;  */
   left: 25vw;
-  top: 10vh;
+  top: 25vh;
   border-radius: 10px;
 }
 
@@ -1318,6 +1317,7 @@ img[alt="im2"]:hover {
 
   img[alt="im1"]:hover,
   img[alt="im2"]:hover {
+    position: initial;
     margin: 0px;
     transform: scale(1.8);
   }
