@@ -4,7 +4,7 @@
 session_start();
 if(($_SESSION['user'])=="admin"){
 }else{
-    header('location:index.php');
+    header('location:index');
 }
 
 require_once "conexion.php";

@@ -45,10 +45,8 @@
         />
 
         <div class="form-log-end">
-          <input type="checkbox" id="btn-rm" />
-          <label for="btn-rm"
-            >&nbsp;Remember me&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label
-          >
+          <input type="checkbox" name="log-remember" id="btn-rm" />
+          <label for="btn-rm" >&nbsp;Remember me&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
           <a class="forgot" href="#" onclick="forgot();">Forgot Password?</a>
         </div>
         <div id="errorlogin"></div>
@@ -71,4 +69,4 @@
 include "footer.php";
 ?>
   </body>
-  </html>
+</html>
