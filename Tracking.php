@@ -27,7 +27,7 @@ if(isset($_SESSION['user'])){
         alt="Placeholder"
       />
       <h1>SHIPPING TRACKER</h1>
-      <form action="" id="form-track" method="POST">
+      <form id="form-track" method="POST">
         <div class="input-text">
           <span>Input yout ID given via email to see real-time location</span>
           <input
@@ -71,8 +71,8 @@ if(isset($_SESSION['user'])){
           $resultado = $sentencia->fetch();
             if($resultado==false){
             echo '<script>
-                    document.getElementById("errortrack").style.display = "block";
-                    </script>';
+                  document.getElementById("errortrack").style.display = "block";
+                  </script>';
                   }
           }
             
@@ -147,8 +147,8 @@ if(isset($_SESSION['user'])){
     <script src="appTrack.js" type="text/javascript"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJ9WgRdqBiW9OyG3eSc5geRXrZ6lWXQjk&callback=iniciarMap"></script>
-<?php
-include "footer.php";
-?>
+    <?php
+    include "footer.php";
+    ?>
   </body>
 </html>

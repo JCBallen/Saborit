@@ -11,7 +11,7 @@
   
     <script defer src="https://www.google.com/recaptcha/api.js?render=6Lc04RUdAAAAAJIM-gtUx7Ub5NStA_-_5OxOvzSx"></script>
     
-    <!-- <script defer src="appLogIn.js"></script> -->
+    <script defer src="appLogIn.js"></script>
   
     <title>LogIn</title>
   </head>
@@ -49,7 +49,7 @@
           <label for="btn-rm"
             >&nbsp;Remember me&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label
           >
-          <a class="forgot" href="#">Forgot Password?</a>
+          <a class="forgot" href="#" onclick="forgot();">Forgot Password?</a>
         </div>
         <div id="errorlogin"></div>
         <div class="form-log">

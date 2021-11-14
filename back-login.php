@@ -27,13 +27,13 @@ if($resultado['correo']=="saboritexpress@gmail.com"){
   #SI LA CONTRASEÑA COINCIDE
   if(password_verify($contrasena_login,$resultado['contrasena'])){
     $_SESSION['user'] = $resultado['nombre'];
-    // header('location:TrackingAdmin.php');
+    // header('location:tracking-admin.php');
     echo '<script type="text/javascript" defer>
               var errorlogin = document.getElementById("errorlogin");
               errorlogin.innerHTML = "*Successfully Login.";
               errorlogin.style.margin = "10px";
               errorlogin.style.color = "green";
-              window.location.href="TrackingAdmin";
+              window.location.href="tracking-admin";
               </script>';
   }
     else{

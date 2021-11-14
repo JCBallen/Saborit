@@ -12,7 +12,7 @@
     <header>
             <div class="nav1">
                 <div class="nav1-container">
-                 <a href="<?php if($_SESSION['user']=="admin"){echo 'TrackingAdmin';}else{echo 'drivers';} ?>">
+                 <a href="<?php if($_SESSION['user']=="admin"){echo 'tracking-admin';}else{echo 'drivers';} ?>">
                  <p>Hello <?php echo $_SESSION['user']; ?>!</p>
                  </a>
                  <img src="https://i.ibb.co/0CYFYP6/Driver.png" alt="Driver">
@@ -33,24 +33,24 @@
                             </div></a>
                             <input class="checkbox" type="checkbox" id="btn-1">
                             <ul class="submenu">
-                                <li><a href="ourtrucks">Our Trucks</a></li>
-                                <li><a href="typesofload">Types of Chargo</a></li>
+                                <li><a href="our-trucks">Our Trucks</a></li>
+                                <li><a href="types-of-load">Types of Chargo</a></li>
                             </ul>
                         </li>
                         <li>
-                            <a href="Tracking">Tracking
+                            <a href="tracking">Tracking
                             <div class="point">
                                 <span class="material-icons" style="font-size: x-small;">fiber_manual_record</span>
                             </div></a>
                         </li>
                         <li>
-                            <a href="contactUs">Contact Us
+                            <a href="contact-us">Contact Us
                             <div class="point">
                                 <span class="material-icons" style="font-size: x-small;">fiber_manual_record</span>
                             </div></a>
                         </li>
                         <li>
-                            <a class="cta" href="Quote"><button>GET A QUOTE</button></a>
+                            <a class="cta" href="quote"><button>GET A QUOTE</button></a>
                         </li>
                     </ul>         
             </nav>
