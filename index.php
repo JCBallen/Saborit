@@ -4,19 +4,21 @@ session_start();
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Saborit Express">
-    <meta name="copyright" content="Liuver Xavier" />
-    <meta name="description" content="Saborit Express Inc. is an active interstate freight company that operates throughout the United States and its borders; has been authorized to move properties.">
-    <meta name="keywords" content="trucks,truck,delivery,quote,shipping,load,tracking,drivers">
-    <meta name="robots" content="index,follow" />
-    <link rel="shortcut icon" href="https://i.ibb.co/0mVtLWn/logo-png.png" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="design.css">
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="Saborit Express"/>
+    <meta name="copyright" content="Liuver Xavier"/>
+    <meta name="description" content="Saborit Express Inc. is an active interstate freight company that operates throughout the United States and its borders; has been authorized to move properties."/>
+    <meta name="keywords" content="trucks,truck,delivery,quote,shipping,load,tracking,drivers"/>
+    <meta name="robots" content="index,follow"/>
+    <link rel="canonical" href="https://saborit.net/"/>
+    <link rel="shortcut icon" href="https://i.ibb.co/0mVtLWn/logo-png.png" type="image/x-icon"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+    <link rel="stylesheet" href="design.css" />
     <title>Saborit Express</title>
 </head>
+<body class="landing-body">
 <?php
 if(isset($_SESSION['user'])){
   include "NavbarLogIn.php";
@@ -24,7 +26,6 @@ if(isset($_SESSION['user'])){
   include "Navbar.php";
 }
 ?>
-<body class="landing-body">
     <div class="hero-image">
         <div class="hero-text">
           <h1 class="main-text">Around usa</h1>

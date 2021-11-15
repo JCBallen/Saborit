@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="canonical" href="https://saborit.net/"/>
     <link rel="shortcut icon" href="https://i.ibb.co/0mVtLWn/logo-png.png" type="image/x-icon" />
     <link rel="stylesheet" href="design.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined" />
@@ -15,10 +16,10 @@
   
     <title>LogIn</title>
   </head>
+  <body class="li-body">
   <?php
   include "Navbar.php";
   ?>
-  <body class="li-body">
     <div class="login-body">
       <div>
         <img src="https://i.ibb.co/2PRtT9Q/usuario.png" alt="login-img" />
@@ -47,7 +48,7 @@
         />
 
         <div class="form-log-end">
-          <input type="checkbox" name="log-remember" id="btn-rm" />
+          <input type="checkbox" name="log-remember" id="btn-rm" checked/>
           <label for="btn-rm" >&nbsp;Remember me&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
           <a class="forgot" href="#" onclick="forgot();">Forgot Password?</a>
         </div>

@@ -14,11 +14,13 @@ if(($_SESSION['user'])=="admin"){
         <meta charset="UTF-8"> 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Tracking | Saborit Express</title>
+        <link rel="canonical" href="https://saborit.net/"/>
         <link rel="shortcut icon" href="https://i.ibb.co/0mVtLWn/logo-png.png" type="image/x-icon">
         <link rel="stylesheet" href="design.css">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <title>Tracking | Saborit Express</title>
     </head>
+  <body class="ta-body">
 <?php
 if(isset($_SESSION['user'])){
   include "NavbarLogIn.php";
@@ -26,7 +28,6 @@ if(isset($_SESSION['user'])){
   include "Navbar.php";
 }
 ?>
-  <body class="ta-body">
     <div class="track-admin">
     <div class="signup-body">
       <div>

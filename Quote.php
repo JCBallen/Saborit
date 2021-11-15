@@ -7,22 +7,23 @@ session_start();
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Get a Quote</title>
+    <link rel="canonical" href="https://saborit.net/"/>
     <link rel="shortcut icon" href="https://i.ibb.co/0mVtLWn/logo-png.png" type="image/x-icon">
-    <link rel="stylesheet" href="design.css" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="design.css" />
+    <title>Get a Quote</title>
   </head>
-<?php
-  if(isset($_SESSION['user'])){
-    include "NavbarLogIn.php";
-}else{
-    include "Navbar.php";
-}
-?>
   <body class="quote-body">
+        <?php
+        if(isset($_SESSION['user'])){
+            include "NavbarLogIn.php";
+        }else{
+            include "Navbar.php";
+        }
+        ?>
             <div class="quote-container">
             <div class="title"><h1>GET A QUOTE</h1></div>
-            <form id="formq" name="formq" class="form-quote" action="" method="">
+            <form id="formq" name="formq" class="form-quote">
                 <div class="type-details">
                     
                     <h4>Type of Cargo</h4>

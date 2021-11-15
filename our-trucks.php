@@ -7,11 +7,13 @@ session_start();
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="canonical" href="https://saborit.net/"/>
     <link rel="shortcut icon" href="https://i.ibb.co/0mVtLWn/logo-png.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="design.css" />
     <title>Our Trucks</title>
   </head>
+  <body class="ot-body">
   <?php
   if(isset($_SESSION['user'])){
     include "NavbarLogIn.php";
@@ -19,7 +21,6 @@ session_start();
     include "Navbar.php";
   }
   ?>
-  <body class="ot-body">
     <section class="main-ot">
       <div class="ot">
         <h2>OUR TRUCKS</h2>

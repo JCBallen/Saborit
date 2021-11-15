@@ -25,20 +25,21 @@ $resultado2 = $sentencia->fetchAll();
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="design.css" />
+    <link rel="canonical" href="https://saborit.net/"/>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="design.css" />
     <script defer src="appTables.js" type="text/javascript"></script>
     <title>Tables</title>
   </head>
-  <?php
-if(isset($_SESSION['user'])){
-  include "NavbarLogIn.php";
-}else{
-  include "Navbar.php";
-}
-?>
   <body class="tables-bd">
+  <?php
+  if(isset($_SESSION['user'])){
+    include "NavbarLogIn.php";
+  }else{
+    include "Navbar.php";
+  }
+  ?>
     <div id="tables-container">
     <div id="tb-1">
       <h1 class="tb-titles">USERS</h1>

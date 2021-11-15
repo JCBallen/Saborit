@@ -51,7 +51,7 @@
                             </div></a>                           
                         </li>
                         <li>
-                            <a class="cta" href="quote"><button>GET A QUOTE</button></a>
+                            <a class="cta" href="quote">GET A QUOTE</a>
                         </li>
                     </ul>         
             </nav>
