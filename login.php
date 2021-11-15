@@ -32,6 +32,7 @@
           type="email"
           name="log-correo"
           placeholder="Email Address"
+          value="<?php echo $_COOKIE['unm']; ?>"
           autofocus="autofocus"
           required
         />
@@ -41,6 +42,7 @@
           type="password"
           name="log-contrasena"
           placeholder="Password"
+          value="<?php echo $_COOKIE['pwd']; ?>"
           required
         />
 

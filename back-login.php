@@ -3,19 +3,18 @@
 session_start();
 
 include_once 'conexion.php';
-include_once 'login.php';
 
 if(isset($_POST['log-correo']) && isset($_POST['log-contrasena'])){
-$usuario_login=$_POST['log-correo'];
-$contrasena_login=$_POST['log-contrasena'];
-$remember=$_POST['log-remember'];
-
-// echo '<pre>';
-// var_dump($usuario_login);
-// var_dump($contrasena_login);
-// echo '</pre>';
-
-#VERIFICA SI USUARIO EXISTE
+  $usuario_login=$_POST['log-correo'];
+  $contrasena_login=$_POST['log-contrasena'];
+  $remember=$_POST['log-remember'];
+  
+  // echo '<pre>';
+  // var_dump($usuario_login);
+  // var_dump($contrasena_login);
+  // echo '</pre>';
+  
+  #VERIFICA SI USUARIO EXISTE
 $sql='SELECT * FROM users WHERE correo = ?';
 $sentencia = $pdo->prepare($sql);
 $sentencia->execute(array($usuario_login));
@@ -29,21 +28,27 @@ if($resultado['correo']=="saboritexpress@gmail.com"){
   if(password_verify($contrasena_login,$resultado['contrasena'])){
     $_SESSION['user'] = $resultado['nombre'];
     if($remember=="on"){
-    $lifetime=60*60*24*14;
-    setcookie(session_name(),session_id(),time()+$lifetime);
+      setcookie('unm',$usuario_login,time()+3600);
+      setcookie('pwd',$contrasena_login,time()+3600);
+    }else{
+      setcookie('unm',"",time()-3600);
+      setcookie('pwd',"",time()-3600);
     }
+    // session_start();
     // header('location:tracking-admin.php');
+    include_once 'login.php';
     echo '<script type="text/javascript" defer>
-              var errorlogin = document.getElementById("errorlogin");
-              errorlogin.innerHTML = "*Successfully Login.";
-              errorlogin.style.margin = "10px";
+    var errorlogin = document.getElementById("errorlogin");
+    errorlogin.innerHTML = "*Successfully Login.";
+    errorlogin.style.margin = "10px";
               errorlogin.style.color = "green";
               window.location.href="tracking-admin";
               </script>';
   }
-    else{
-        // header('location:login.php');
-        // echo '<script type="text/javascript">alert("WRONG EMAIL OR PASSWORD!");window.location.href="login.php";</script>';
+    else{      
+      // header('location:login.php');
+      // echo '<script type="text/javascript">alert("WRONG EMAIL OR PASSWORD!");window.location.href="login.php";</script>';
+      include_once 'login.php';
         echo '<script type="text/javascript" defer>
               var errorlogin = document.getElementById("errorlogin");
               errorlogin.innerHTML = "*Wrong Email or Password.";
@@ -60,10 +65,15 @@ else
       if(password_verify($contrasena_login,$resultado['contrasena'])){
         $_SESSION['user'] = $resultado['nombre'];
         if($remember=="on"){
-          $lifetime=60*60*24*14;
-          setcookie(session_name(),session_id(),time()+$lifetime);
+          setcookie("unm",$usuario_login,time()+3600);
+          setcookie("pwd",$contrasena_login,time()+3600);
+        }else{
+          setcookie('unm',"",time()-3600);
+          setcookie('pwd',"",time()-3600);
         }
+        // session_start();
         // header('location:drivers.php');
+        include_once 'login.php';
         echo '<script type="text/javascript" defer>
               var errorlogin = document.getElementById("errorlogin");
               errorlogin.innerHTML = "*Successfully Login.";
@@ -75,6 +85,7 @@ else
         else{
             // header('location:login.php');
             // echo '<script type="text/javascript">alert("WRONG EMAIL OR PASSWORD!");window.location.href="login.php";</script>';
+            include_once 'login.php';
             echo '<script type="text/javascript" defer>
             var errorlogin = document.getElementById("errorlogin");
             errorlogin.innerHTML = "*Wrong Email or Password.";
@@ -86,6 +97,7 @@ else
     }else{
         // header('location:login.php');
         // echo '<script type="text/javascript">alert("WRONG EMAIL OR PASSWORD!");window.location.href="login.php";</script>';
+        include_once 'login.php';
         echo '<script type="text/javascript" defer>
         var errorlogin = document.getElementById("errorlogin");
         errorlogin.innerHTML = "*Wrong Email or Password.";

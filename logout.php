@@ -15,6 +15,9 @@ if (ini_get("session.use_cookies")) {
         $params["secure"], $params["httponly"]
     );
 }
+setcookie("unm","",time()-3600);
+setcookie("pwd","",time()-3600);
+session_unset();
 
 // Finalmente, destruir la sesión.
 session_destroy();
