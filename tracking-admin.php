@@ -4,24 +4,30 @@
 session_start();
 if(($_SESSION['user'])=="admin"){
 }else{
-    header('location:index.php');
+    header('location:index');
 }
 
 ?>
-
 <!DOCTYPE html>
 <html lang="en-US">
     <head>
         <meta charset="UTF-8"> 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Tracking | Saborit Express</title>
+        <link rel="canonical" href="https://saborit.net/"/>
         <link rel="shortcut icon" href="https://i.ibb.co/0mVtLWn/logo-png.png" type="image/x-icon">
         <link rel="stylesheet" href="design.css">
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-        rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <title>Tracking | Saborit Express</title>
     </head>
   <body class="ta-body">
+<?php
+if(isset($_SESSION['user'])){
+  include "NavbarLogIn.php";
+}else{
+  include "Navbar.php";
+}
+?>
     <div class="track-admin">
     <div class="signup-body">
       <div>
@@ -113,14 +119,9 @@ if(($_SESSION['user'])=="admin"){
           </div>
     </div>
     </div>
-    <a id="btn-admin-tables" href="tables.php">Tables</a>
-  </body>
-</html>
+    <a id="btn-admin-tables" href="tables">Tables</a>
 <?php
-if(isset($_SESSION['user'])){
-  include "NavbarLogIn.php";
-}else{
-  include "Navbar.php";
-}
 include "footer.php";
 ?>
+</body>
+</html>

@@ -7,16 +7,20 @@ session_start();
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Tracking | Saborit Express</title>
+    <link rel="canonical" href="https://saborit.net/"/>
     <link rel="shortcut icon" href="https://i.ibb.co/0mVtLWn/logo-png.png" type="image/x-icon">
     <link rel="stylesheet" href="design.css" />
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Tracking</title>
   </head>
-
   <body style="background: #d5d5d5">
+  <?php
+  if(isset($_SESSION['user'])){
+    include "NavbarLogIn.php";
+  }else{
+    include "Navbar.php";
+  }
+  ?>
     <div id="track-container" class="track-container">
       <img
         class="image"
@@ -24,7 +28,7 @@ session_start();
         alt="Placeholder"
       />
       <h1>SHIPPING TRACKER</h1>
-      <form action="" id="form-track" method="POST">
+      <form id="form-track" method="POST">
         <div class="input-text">
           <span>Input yout ID given via email to see real-time location</span>
           <input
@@ -68,8 +72,8 @@ session_start();
           $resultado = $sentencia->fetch();
             if($resultado==false){
             echo '<script>
-                    document.getElementById("errortrack").style.display = "block";
-                    </script>';
+                  document.getElementById("errortrack").style.display = "block";
+                  </script>';
                   }
           }
             
@@ -97,11 +101,11 @@ session_start();
 
           ?>
 
-            <span class="subtitle"><h4>Milles to Destination</h4></span>
+            <h4><span class="subtitle">Milles to Destination</span></h4>
             <p><?php if(!isset($resultado["miles"])){echo "{$default}";}else{ echo "{$resultado["miles"]}  milles";} ?></p>
           </div>
           <div class="time">
-            <span class="subtitle"><h4>Estimated Time to Arrival</h4></span>
+          <h4><span class="subtitle">Estimated Time to Arrival</span></h4>
             <p><?php if(!isset($resultado["arrivalTime"])){echo "{$default}";}else{echo $resultado["arrivalTime"];} ?></p>
           </div>
         </div>
@@ -144,14 +148,8 @@ session_start();
     <script src="appTrack.js" type="text/javascript"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJ9WgRdqBiW9OyG3eSc5geRXrZ6lWXQjk&callback=iniciarMap"></script>
+    <?php
+    include "footer.php";
+    ?>
   </body>
 </html>
-
-<?php
-if(isset($_SESSION['user'])){
-  include "NavbarLogIn.php";
-}else{
-  include "Navbar.php";
-}
-include "footer.php";
-?>

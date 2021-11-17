@@ -7,12 +7,21 @@ session_start();
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
+    <link rel="canonical" href="https://saborit.net/"/>
     <link rel="shortcut icon" href="https://i.ibb.co/1G4Zj02/Recurso-17.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="design.css">
+    <title>Contact Us</title>
 </head>
 <body>
-    <div class="contact-container">
+<?php
+if(isset($_SESSION['user'])){
+    include "NavbarLogIn.php";
+}else{
+    include "Navbar.php";
+}
+?>
+<div class="contact-container">
 <div class="caja-main">
     <h1 class="main-contact">contact us</h1>
 
@@ -41,13 +50,8 @@ session_start();
 </div>
 </div>
 <script src="appContactUs.js"></script>
-</body>
-</html>
 <?php
-if(isset($_SESSION['user'])){
-    include "NavbarLogIn.php";
-}else{
-    include "Navbar.php";
-}
     include "footer.php";
 ?>
+</body>
+</html>

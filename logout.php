@@ -15,8 +15,11 @@ if (ini_get("session.use_cookies")) {
         $params["secure"], $params["httponly"]
     );
 }
+// setcookie("unm","",time()-3600);
+// setcookie("pwd","",time()-3600);
+session_unset();
 
 // Finalmente, destruir la sesión.
 session_destroy();
-echo '<script type="text/javascript">alert("SESSION ENDED!");window.location.href="index.php";</script>';
+echo '<script type="text/javascript">alert("SESSION ENDED!");window.location.href="index";</script>';
 // header('location:index.php');

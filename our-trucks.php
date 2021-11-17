@@ -7,16 +7,25 @@ session_start();
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="canonical" href="https://saborit.net/"/>
     <link rel="shortcut icon" href="https://i.ibb.co/0mVtLWn/logo-png.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="design.css" />
     <title>Our Trucks</title>
   </head>
   <body class="ot-body">
+  <?php
+  if(isset($_SESSION['user'])){
+    include "NavbarLogIn.php";
+  }else{
+    include "Navbar.php";
+  }
+  ?>
     <section class="main-ot">
       <div class="ot">
         <h2>OUR TRUCKS</h2>
         <br>
-        <p>We have a variety of trucks that support loads up to x lb</p>
+        <p>We have a variety of trucks that support loads up to 45 000 lb</p>
         <p>
           <br>
           All our roads are <strong>Brand New</strong> equipement 2021 and 2022
@@ -34,13 +43,8 @@ session_start();
       </div>
     </section>
     <!-- <div id="fondo"></div> -->
-  </body>
-</html>
 <?php
-if(isset($_SESSION['user'])){
-  include "NavbarLogIn.php";
-}else{
-  include "Navbar.php";
-}
 include "footer.php";
 ?>
+  </body>
+</html>

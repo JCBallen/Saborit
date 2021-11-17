@@ -30,7 +30,7 @@ background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("
 background-position: center;
 background-repeat: no-repeat;                    /*No repite la imagen por defecto*/
 background-size: cover;                             /*Escala la imagen al mayor tamaño posible sin deformarla y le recorta una seccion*/
-
+padding: 100px 0px;
 
 /* position: relative; */
 }
@@ -1210,6 +1210,7 @@ body.ot-body {
 }
 
 section.main-ot {
+  position: relative;
   display: flex;
   justify-content: center;
   padding: 8%;
@@ -1264,11 +1265,6 @@ img[alt="im2"] {
   transition: 0.4s;
 }
 
-img[alt="im3"] {
-  width: 100%;
-  height: auto;
-}
-
 div h3.truck-name {
   display: flex;
   font-size: 20px;
@@ -1287,11 +1283,12 @@ div h3.truck-name {
 
 img[alt="im1"]:hover,
 img[alt="im2"]:hover {
-  position: relative; 
-  transform: scale(4);
+  position: absolute; 
+  transform: scale(1.4);
   z-index: 1;
   box-shadow: 0px 0px 20px 0px rgb(0, 0, 0);
-  margin: 20vh -28vw;
+  left: 25vw;
+  top: 20vh;
   border-radius: 10px;
 }
 
@@ -1320,6 +1317,7 @@ img[alt="im2"]:hover {
 
   img[alt="im1"]:hover,
   img[alt="im2"]:hover {
+    position: initial;
     margin: 0px;
     transform: scale(1.8);
   }
@@ -1712,10 +1710,6 @@ td,th{
   font-family: 'Open Sans', sans-serif;
 }
 
-html, body {
-    height: 100%;
-}
-
 header{
     position: fixed;
     top:0px;
@@ -1895,6 +1889,10 @@ input.btn {
      font-size: 18px;
      padding: 30px 15px;
  }
+
+ a.shipping div span, a.shipping div, a.shipping{
+   cursor: no-drop;
+ }
  
  .navbar2 ul ul {
      position: absolute;
@@ -1952,7 +1950,7 @@ input.btn {
      background: none;
  }
  
- .navbar2 button{
+ .navbar2 a.cta{
      font-size: 15px;
      font-weight: bold;
      padding: 9px 18px;
@@ -1963,8 +1961,8 @@ input.btn {
      transition: all 0.3s ease 0s;
  }
  
- .navbar2 button:hover {
-     background-color: rgba(255, 170, 1, 0.8);
+ .navbar2 a.cta:hover {
+     background-color: rgba(255, 170, 1, 0.7);
  } 
  
  .btn-menu, .btn-submenu, .checkbox{
@@ -2130,11 +2128,11 @@ input[type="radio"]:checked + label::after {
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-top: 100px;
+    margin-top: 200px;
     padding: 20px;
     background: #D5D5D5;
     flex-direction: column;
-    margin-bottom: 15px;
+    margin-bottom: 100px;
 }
 
 .track-container .image {
@@ -2216,6 +2214,10 @@ input[type="radio"]:checked + label::after {
 
 /*Drivers*/
 
+body.drivers-bd{
+  height: 100vh;
+}
+
 .drivers{
     width:100%;
     height: 100%;
@@ -2241,7 +2243,8 @@ input[type="radio"]:checked + label::after {
 }
 
 .drivers h1 {
-    z-index: 1; 
+    margin-top: 120px;
+    z-index: 0; 
     text-shadow: 2px 2px 5px white;
     text-transform: uppercase;
 }
@@ -2254,7 +2257,7 @@ input[type="radio"]:checked + label::after {
     display: flex;
     text-align: center;
     justify-content: space-between;
-    z-index: 1;
+    z-index: 0;
 }
 
 .drivers-container .card-1, .card-2{

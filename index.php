@@ -4,18 +4,32 @@ session_start();
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="Saborit Express"/>
+    <meta name="copyright" content="Liuver Xavier"/>
+    <meta name="description" content="Saborit Express Inc. is an active interstate freight company that operates throughout the United States and its borders; has been authorized to move properties."/>
+    <meta name="keywords" content="trucks,truck,delivery,quote,shipping,load,tracking,drivers"/>
+    <meta name="robots" content="index,follow"/>
+    <link rel="canonical" href="https://saborit.net/"/>
+    <link rel="shortcut icon" href="https://i.ibb.co/0mVtLWn/logo-png.png" type="image/x-icon"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+    <link rel="stylesheet" href="design.css" />
     <title>Saborit Express</title>
-    <link rel="shortcut icon" href="https://i.ibb.co/0mVtLWn/logo-png.png" type="image/x-icon">
-    <link rel="stylesheet" href="design.css">
 </head>
 <body class="landing-body">
+<?php
+if(isset($_SESSION['user'])){
+  include "NavbarLogIn.php";
+}else{
+  include "Navbar.php";
+}
+?>
     <div class="hero-image">
         <div class="hero-text">
           <h1 class="main-text">Around usa</h1>
-          <p class=>Saborit Express Inc is an active interstate freight company that operates throughout the United States and its borders; has been authorized to move properties under MC1118164 and USDOT 3442010, and has been active since July 22, 2020.</p>
+          <p>Saborit Express Inc is an active interstate freight company that operates throughout the United States and its borders; has been authorized to move properties under MC1118164 and USDOT 3442010, and has been active since July 22, 2020.</p>
         </div>
       
  </div>
@@ -29,7 +43,7 @@ session_start();
         
         <div class="imagenes-caja">
             <div class="circulo">
-                 <img src="https://i.ibb.co/M7fKF02/diet-1.png" alt="diet-1" alt="services-we-offer: Food" class="zanahoria">
+                 <img src="https://i.ibb.co/M7fKF02/diet-1.png" alt="diet-1 services-we-offer: Food" class="zanahoria">
              
             <p> Food</p>
           </div><br>
@@ -47,13 +61,8 @@ session_start();
         </div>
      </div>
     </div>
-</body>
-</html>
 <?php
-if(isset($_SESSION['user'])){
-  include "NavbarLogIn.php";
-}else{
-  include "Navbar.php";
-}
 include "footer.php";
 ?>
+</body>
+</html>

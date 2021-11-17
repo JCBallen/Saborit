@@ -4,25 +4,28 @@
 session_start();
 if(isset($_SESSION['user'])){
 }else{
-    header('location:index.php');
+    header('location:index');
 }
 
 ?>
-
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Drivers | Saborit Express</title>
-    <!--<link rel="stylesheet" href="styledrivers.css">-->
+    <link rel="canonical" href="https://saborit.net/"/>
     <link rel="shortcut icon" href="https://i.ibb.co/0mVtLWn/logo-png.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="design.css">
+    <title>Drivers</title>
 </head>
 <body class="drivers-bd">
+<?php
+include "NavbarLogIn.php";
+?>
     <div class="drivers">
-        <!--<a id=logout href="logout.php">Log Out</a>-->
+        <!--<a id=logout href="logout">Log Out</a>-->
         <h1 class="title">WELCOME AGAIN <?php echo $_SESSION['user']; ?> </h1>
         <div class="drivers-container">
             <div class="card-1">
@@ -37,9 +40,8 @@ if(isset($_SESSION['user'])){
             </div>
         </div>
     </div>
-</body>
-</html>
 <?php
-include "NavbarLogIn.php";
 include "footer.php";
 ?>
+</body>
+</html>

@@ -7,11 +7,20 @@ session_start();
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="canonical" href="https://saborit.net/"/>
     <link rel="shortcut icon" href="https://i.ibb.co/0mVtLWn/logo-png.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="design.css" />
     <title>Types Of Load</title>
   </head>
   <body class="tl-body">
+    <?php
+    if(isset($_SESSION['user'])){
+    include "NavbarLogIn.php";
+    }else{
+    include "Navbar.php";
+    }
+    ?>
     <div class="body-tl">
       <h1 class="title-tl">TYPES OF LOAD</h1>
       <div class="buttons">
@@ -39,13 +48,9 @@ session_start();
         <img src="https://i.ibb.co/hRwpq46/mid.jpg" alt="mid" />
         <img src="https://i.ibb.co/7RQyv7J/full.jpg" alt="full" />
     </div>
+  </div>
+  <?php
+  include "footer.php";
+  ?>
   </body>
 </html>
-<?php
-if(isset($_SESSION['user'])){
-  include "NavbarLogIn.php";
-}else{
-  include "Navbar.php";
-}
-include "footer.php";
-?>
