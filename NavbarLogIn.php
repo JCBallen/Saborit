@@ -34,7 +34,7 @@
                             <input class="checkbox" type="checkbox" id="btn-1">
                             <ul class="submenu">
                                 <li><a href="our-trucks">Our Trucks</a></li>
-                                <li><a href="types-of-load">Types of Cargo</a></li>
+                                <li><a href="types-of-load">Types of Load</a></li>
                             </ul>
                         </li>
                         <li>

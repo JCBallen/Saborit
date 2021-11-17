@@ -238,11 +238,12 @@ const quote=(quotation)=>{
         return result.toFixed(2);
     }
     if(typeOfLoad=="Less than Truckload" && typeOfTruck=="Reefer" && continuity=="Yes"){
-        let result = 2.60 * distanceMiles;
+         let result = 2.60 * distanceMiles;
         return result.toFixed(2);
     }
     if(typeOfLoad=="Less than Truckload" && typeOfTruck=="Reefer" && continuity=="No"){
-        let result = 2.75 * distanceMiles;
+         let result = 2.75 * distanceMiles;
         return result.toFixed(2);
     }
+ 
 }
