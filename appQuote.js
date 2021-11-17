@@ -234,57 +234,15 @@ const quote=(quotation)=>{
         return result.toFixed(2);
     }
     if(typeOfLoad=="Less than Truckload" && typeOfTruck=="Dry van"){
-        if(length<=159){
-            let result = 0.575 * distanceMiles;
-            return result.toFixed(2);
-        }
-        if(length>159 && length<=318){
-            let result = 1.15 * distanceMiles;
-            return result.toFixed(2);
-        }
-        if(length>318 && length<=477){
-            let result = 1.725 * distanceMiles;
-            return result.toFixed(2);
-        }
-        if(length>477 && length<=636){
-            let result = 2.30 * distanceMiles;
-            return result.toFixed(2);
-        }
+        let result = 2.20 * distanceMiles;
+        return result.toFixed(2);
     }
     if(typeOfLoad=="Less than Truckload" && typeOfTruck=="Reefer" && continuity=="Yes"){
-        if(length<=159){
-            let result = 0.675 * distanceMiles;
-            return result.toFixed(2);
-        }
-        if(length>159 && length<=318){
-            let result = 1.35 * distanceMiles;
-            return result.toFixed(2);
-        }
-        if(length>318 && length<=477){
-            let result = 2.025 * distanceMiles;
-            return result.toFixed(2);
-        }
-        if(length>477 && length<=636){
-            let result = 2.70 * distanceMiles;
-            return result.toFixed(2);
-        }
+        let result = 2.60 * distanceMiles;
+        return result.toFixed(2);
     }
     if(typeOfLoad=="Less than Truckload" && typeOfTruck=="Reefer" && continuity=="No"){
-        if(length<=159){
-            let result = 0.7125 * distanceMiles;
-            return result.toFixed(2);
-        }
-        if(length>159 && length<=318){
-            let result = 1.425 * distanceMiles;
-            return result.toFixed(2);
-        }
-        if(length>318 && length<=477){
-            let result = 2.1375 * distanceMiles;
-            return result.toFixed(2);
-        }
-        if(length>477 && length<=636){
-            let result = 2.85 * distanceMiles;
-            return result.toFixed(2);
-        }
+        let result = 2.75 * distanceMiles;
+        return result.toFixed(2);
     }
 }
