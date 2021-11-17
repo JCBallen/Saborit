@@ -16,20 +16,20 @@ session_start();
 <div class="caja-main">
     <h1 class="main-contact">contact us</h1>
 
-    <!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScvapoZRC3gattm1Ex6I_vUPZIAPz4RfHlg2xPiPrEckMKTQw/viewform?embedded=true" width="100%" height="812" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe> -->
-    <form action="sendMail.php" method="POST" id="contact-form" class="form-contact" enctype="text/plain">
-        <label class="contact-label" for="contact-name" id="a">Name</label><br>
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScvapoZRC3gattm1Ex6I_vUPZIAPz4RfHlg2xPiPrEckMKTQw/viewform?embedded=true" width="100%" height="812" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe> 
+    <!--<form action="sendMail.php" method="POST" id="contact-form" class="form-contact" enctype="text/plain">
+        <label class="contact-label" for="name" id="a">Name</label><br>
         
-        <input id="name" class="contact-input" type="text" name="contact-name" class="casilla" style="padding-left: 15px ;"><br><br>
+        <input id="name" class="contact-input casilla" type="text" name="contact-name" style="padding-left: 15px ;"><br><br>
         
 
-        <label class="contact-label" for="mail">Email</label><br>
+        <label class="contact-label" for="email">Email</label><br>
         
-        <input id="email" class="contact-input" type="email" name="mail" class="casilla" style="padding-left: 15px;"><br><br>
+        <input id="email" class="contact-input casilla" type="email" name="mail" style="padding-left: 15px;"><br><br>
         
         <label class="contact-label" for="subject">Subject</label><br>
         
-        <input id="subject" class="contact-input" type="text" name="subject" class="casilla" style="padding-left: 15px;"><br><br>
+        <input id="subject" class="contact-input casilla" type="text" name="subject" style="padding-left: 15px;"><br><br>
         
         
         <label class="contact-label" for="message">Message</label><br>
@@ -37,7 +37,7 @@ session_start();
 
         <div id="errorcontact"></div>
         <input type="submit" name="submit" value="Submit" class="btn-contact">
-    </form>
+    </form> -->
 </div>
 </div>
 <script src="appContactUs.js"></script>
