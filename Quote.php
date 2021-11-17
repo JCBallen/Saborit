@@ -69,8 +69,8 @@ session_start();
                      </div>
                     <h4>Shipment Information</h4>
                     <div class="input-number">
-                        <input id="weight" type="number" class="inputn" placeholder="Weight (lb)">
-                        <input id="length" type="number" class="inputn" placeholder="Length (in)">
+                        <input id="weight" type="number" class="inputn" placeholder="Weight (lbs)">
+                        <input id="length" type="number" max="636" class="inputn" placeholder="Length (in)">
                         <div id="temperature"><input id="temp" type="number" class="inputn" placeholder="Temperature (°F)"></div>
                     </div>
                 </div>
