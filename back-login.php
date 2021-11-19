@@ -115,8 +115,9 @@ $resultado=null;
 }
 
 }else{
+  include_once 'login.php';
   echo '<script type="text/javascript" defer>
-  var errorSignUp = document.getElementById("errorsignup");
+  var errorSignUp = document.getElementById("errorlogin");
   errorSignUp.innerHTML = "*Don\'t Use Special Characters.";
   errorSignUp.style.margin = "10px";
   errorSignUp.style.color = "red";
