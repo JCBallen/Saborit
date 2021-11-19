@@ -4,6 +4,9 @@ session_start();
 
 include_once 'conexion.php';
 
+if( preg_match('/^[a-zA-ZáéíóúñÁÉÍÓÚÑ ]+$/', $_POST['log-correo']) &&
+preg_match('/^[0-9a-zA-Z]+$/', $_POST['log-contrasena']) ){
+
 if(isset($_POST['log-correo']) && isset($_POST['log-contrasena'])){
   $usuario_login=$_POST['log-correo'];
   $contrasena_login=$_POST['log-contrasena'];
@@ -109,4 +112,13 @@ else
 
 $sentencia=null;
 $resultado=null;
+}
+
+}else{
+  echo '<script type="text/javascript" defer>
+  var errorSignUp = document.getElementById("errorsignup");
+  errorSignUp.innerHTML = "*Don\'t Use Special Characters.";
+  errorSignUp.style.margin = "10px";
+  errorSignUp.style.color = "red";
+  </script>';
 }
