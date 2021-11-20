@@ -2,10 +2,9 @@
 
 session_start();
 
-include_once 'conexion.php';
+require_once 'conexion.php';
 
-if( preg_match('/^[a-zA-ZáéíóúñÁÉÍÓÚÑ ]+$/', $_POST['log-correo']) &&
-preg_match('/^[0-9a-zA-Z]+$/', $_POST['log-contrasena']) ){
+if( preg_match('/^[0-9a-zA-Z]+$/', $_POST['log-contrasena']) ){
 
 if(isset($_POST['log-correo']) && isset($_POST['log-contrasena'])){
   $usuario_login=$_POST['log-correo'];
@@ -44,9 +43,9 @@ if($resultado['correo']=="saboritexpress@gmail.com"){
     var errorlogin = document.getElementById("errorlogin");
     errorlogin.innerHTML = "*Successfully Login.";
     errorlogin.style.margin = "10px";
-              errorlogin.style.color = "green";
-              window.location.href="tracking-admin";
-              </script>';
+    errorlogin.style.color = "green";
+    window.location.href="tracking-admin";
+    </script>';
   }
     else{      
       // header('location:login.php');

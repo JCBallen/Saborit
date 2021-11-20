@@ -1,7 +1,7 @@
 <?php
 session_start();
-include_once 'conexion.php';
-include 'TrackingAdmin.php';
+require_once 'conexion.php';
+require_once 'TrackingAdmin.php';
 
 
 if (isset($_POST['track-code']) && isset($_POST['track-lat']) && isset($_POST['track-long']) && isset($_POST['track-miles']) && isset($_POST['track-time'])){

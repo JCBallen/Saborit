@@ -1,8 +1,6 @@
 <?php
 
-include_once 'conexion.php';
-include 'TrackingAdmin.php';
-
+require_once 'conexion.php';
 
 if( preg_match('/^[a-zA-ZáéíóúñÁÉÍÓÚÑ ]+$/', $_POST['nombre']) &&
 preg_match('/^[0-9a-zA-Z]+$/', $_POST['contrasena']) ){
@@ -22,6 +20,7 @@ preg_match('/^[0-9a-zA-Z]+$/', $_POST['contrasena']) ){
 
       if($resultado){
         // echo '<script type="text/javascript">alert("THIS EMAIL IS ALREADY REGISTERED!");window.location.href="signup.php";</script>';
+        include_once 'tracking-admin.php';
         echo '<script type="text/javascript" defer>
               var errorSignUp = document.getElementById("errorsignup");
               errorSignUp.innerHTML = "*This Email is Already Registered.";
@@ -40,9 +39,10 @@ preg_match('/^[0-9a-zA-Z]+$/', $_POST['contrasena']) ){
       $sentencia_agregar = null;
       $pdo = null;
 
+      include_once 'tracking-admin.php';
       echo '<script type="text/javascript" defer>
       var errorSignUp = document.getElementById("errorsignup");
-      errorSignUp.innerHTML = "*Email Successfully Registered.";
+      errorSignUp.innerHTML = "*User Successfully Registered.";
       errorSignUp.style.margin = "10px";
       errorSignUp.style.color = "green";
       </script>';
@@ -52,6 +52,7 @@ preg_match('/^[0-9a-zA-Z]+$/', $_POST['contrasena']) ){
     
   }
 }else{
+  include 'tracking-admin.php';
   echo '<script type="text/javascript" defer>
   var errorSignUp = document.getElementById("errorsignup");
   errorSignUp.innerHTML = "*Don\'t Use Special Characters.";
