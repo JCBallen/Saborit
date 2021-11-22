@@ -147,7 +147,7 @@ session_start();
 
     <script src="appTrack.js" type="text/javascript"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJ9WgRdqBiW9OyG3eSc5geRXrZ6lWXQjk&callback=iniciarMap"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJ9WgRdqBiW9OyG3eSc5geRXrZ6lWXQjk&language=en&callback=iniciarMap"></script>
     <?php
     include "footer.php";
     ?>
