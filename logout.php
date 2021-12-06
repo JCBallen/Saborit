@@ -21,5 +21,5 @@ session_unset();
 
 // Finalmente, destruir la sesión.
 session_destroy();
-echo '<script type="text/javascript">alert("SESSION ENDED!");window.location.href="index";</script>';
+echo '<script type="text/javascript">window.location.href="index";</script>';
 // header('location:index.php');

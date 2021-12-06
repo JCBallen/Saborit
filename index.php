@@ -17,8 +17,19 @@ session_start();
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
     <link rel="stylesheet" href="design.css" />
     <title>Saborit Express</title>
+    <script defer src="appCookies.js"></script>
 </head>
 <body class="landing-body">
+
+<div id="blackout"></div>
+<div id="cookies-modal">
+  <h3>Cookies</h3> <br>
+  <p>We use cookies to improve your experience on our site</p> <br>
+  <button id="btn-cookies">Accept</button> <br>
+  <a href="cookies-policy" target="_blank" >Cookies policy</a>
+</div>
+
+
 <?php
 if(isset($_SESSION['user'])){
   include "NavbarLogIn.php";

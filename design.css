@@ -379,6 +379,116 @@ padding: 100px 0px;
 
 
 
+/* COOKIES */
+#cookies-modal {
+  background-color: #E2E2E2;
+  max-width: 300px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 30px;
+  box-shadow: 5px 5px 2px 1px #0B1260;
+  z-index: 100;
+}
+
+#blackout {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 99;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#btn-cookies {
+  width: 70%;
+  border-radius: 10px;
+
+  color: #0b1360;
+  background-color: #209dbc;
+  font-weight: bold;
+  padding: 10px;
+  border: none;
+  border-color: 1px solid #419ba2;
+  transition: 0.2s;
+
+  font-size: 15px;
+  border-bottom-width: 2px;
+}
+
+#btn-cookies:hover{
+  background-color: #58b6cd;
+
+}
+#btn-cookies:active{
+  background-color: #0077b6;
+}
+
+#cookies-modal a{
+  text-decoration: none;
+  color: #0077b6 ;
+}
+
+#cookies-modal a:hover{
+  text-decoration: underline;
+}
+
+/* PAGINA DE COOKIES POLICY */
+
+
+
+.body-cookie-policy{
+  background-color: #0B1260;
+}
+.container-policy {
+  background-color: white;
+  margin: 5%;
+  padding: 5% 15%;
+  line-height: 50px;
+  border-radius: 20px;
+}
+
+.container-policy h1 {
+  padding: 80px 0px;
+}
+
+img.logo-saborit{
+  width: 20%;
+  margin-top: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
